@@ -2,6 +2,7 @@
 import {RiMenu2Line} from 'react-icons/ri'
 import {BsChevronDown, BsChevronUp} from 'react-icons/bs'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
   const [arrow,setArrow] = useState(true)
@@ -63,7 +64,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
                     <div className=' p-4 text-xl font-bold text-[#0C768A]'>{user?.firstName}</div>
                 </div>
                 <div className=" ml-2 text-left justify-center">
-                  <div className=' font-bold text-lg'>{user?.name}</div>
+                  <div className=' font-bold text-md'>{user?.name}</div>
                   <div className=' text-[#C1DCE1]'>{user?.team}</div>
                 </div>
               </div>
@@ -95,7 +96,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
       {/* Menu Section */}
       <div className="">
         <div className=" ml-6 my-5">
-          <h1 className=' text-[#86BBC5] font-bold'>Menu</h1>
+          <h1 className=' text-[#86BBC5] font-bold'>MENU</h1>
         </div>
         <div className="">
 
@@ -107,7 +108,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
             <span className=' badge badge-accent text-white font-bold mt-3'>3</span>
           </div>
             {/* App */}
-          <div className="collapse">
+          <div className="collapse mt-1">
             <input type="checkbox" /> 
             <div className="collapse-title ">
                 <div className=" flex justify-between items-center px-3 w-[300px]">
@@ -175,6 +176,137 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
         </div>
       </div>
 
+       {/* Pages */}
+       <div className="">
+        <div className=" ml-6 mt-1">
+          <h1 className=' text-[#86BBC5] font-bold'>PAGES</h1>
+        </div>
+        {/* authentication */}
+        <div className="collapse">
+            <input type="checkbox" /> 
+            <div className="collapse-title ">
+                <div className=" flex justify-between items-center px-3 w-[300px]">
+                <a href="/" className=' flex items-center'>
+                <span className=' text-xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path fill='white' d="M21,12c0-.34-.02-.67-.05-1H12.5V9.5a.99991.99991,0,0,0-1.707-.707l-2.5,2.5a.99962.99962,0,0,0,0,1.41406l2.5,2.5A.99991.99991,0,0,0,12.5,14.5V13h8.45C20.98,12.67,21,12.34,21,12Z"></path><path fill='#86BBC5' d="M12.5,13v1.5a.99989.99989,0,0,1-1.707.707l-2.5-2.5a.99962.99962,0,0,1,0-1.41406l2.5-2.5A.99991.99991,0,0,1,12.5,9.5V11h8.44952a10,10,0,1,0,0,2Z"></path></svg></span>
+                <h1 className=' text-stone-200 text-[18px]'>Authentication</h1>
+                </a>
+            <span className=' mt-3 text-white mr-7'> <BsChevronDown /> </span>
+              </div>
+            </div>
+            <div className="collapse-content"> 
+              <ul className='text-[18px] text-stone-200 ml-10 flex flex-col gap-5'>
+                <Link to={'/login'}>
+                <li className=''>
+                    <h1 className=''>Login</h1>
+                  </li>
+                </Link>
+                <Link to={'/register'}>
+                  <li className=''>
+                    <h1 className=''>Register</h1>
+                  </li>
+                </Link>
+                <li className=''>
+                  <h1 className=''>Recover Password</h1>
+                </li>
+                <li className=''>
+                    <h1>Lock screen</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* ExtraPages */}
+          <div className="collapse">
+            <input type="checkbox" /> 
+            <div className="collapse-title ">
+                <div className=" flex justify-between items-center px-3 w-[300px]">
+                <a href="/" className=' flex items-center'>
+                <span className=' text-xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path fill='white' d="M21,12c0-.34-.02-.67-.05-1H12.5V9.5a.99991.99991,0,0,0-1.707-.707l-2.5,2.5a.99962.99962,0,0,0,0,1.41406l2.5,2.5A.99991.99991,0,0,0,12.5,14.5V13h8.45C20.98,12.67,21,12.34,21,12Z"></path><path fill='#86BBC5' d="M12.5,13v1.5a.99989.99989,0,0,1-1.707.707l-2.5-2.5a.99962.99962,0,0,1,0-1.41406l2.5-2.5A.99991.99991,0,0,1,12.5,9.5V11h8.44952a10,10,0,1,0,0,2Z"></path></svg></span>
+                <h1 className=' text-stone-200 text-[18px]'>Extra Pages</h1>
+                </a>
+            <span className=' mt-3 text-white mr-7'> <BsChevronDown /> </span>
+              </div>
+            </div>
+            <div className="collapse-content"> 
+              <ul className='text-[18px] text-stone-200 ml-10 flex flex-col gap-5'>
+                <li className=''>
+                  <h1 className=''>Stater Page</h1>
+                </li>
+                <li className=''>
+                    <h1>Coming Soon</h1>
+                </li>
+                <li className=''>
+                  <h1 className=''>Maintainance</h1>
+                </li>
+                <li className=''>
+                    <h1>Error 404</h1>
+                </li>
+                <li className=''>
+                  <h1 className=''>[Help Center] FAQ</h1>
+                </li>
+                <Link to={'/profile'}>
+                <li className=''>
+                    <h1>Profile</h1>
+                </li>
+                </Link>
+                <li className=''>
+                  <h1 className=''>Pricing</h1>
+                </li>
+                <li className=''>
+                    <h1>Terms and Conditions</h1>
+                </li>
+              </ul>
+            </div>
+          </div>
+       </div>
+
+      {/* Components */}
+      <div className=" mb-40">
+      <div className=" ml-6 mt-2">
+          <h1 className=' text-[#86BBC5] font-bold'>COMPONENTS</h1>
+      </div>
+      <div className=" flex justify-between items-center px-7 mt-3">
+            <a href="/" className=' flex items-center mt-2'>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <h1 className=' text-white text-[18px]'>UI Elements</h1>
+            </a>
+      </div>
+      <div className=" flex justify-between items-center px-7 mt-3">
+            <a href="/" className=' flex items-center mt-2'>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <h1 className=' text-white text-[18px]'>Forms</h1>
+            </a>
+            <span className=' badge badge-error text-white font-bold mt-5'>3</span>
+      </div>
+      <div className=" flex justify-between items-center px-7 mt-5">
+            <a href="/" className=' flex items-center mt-2'>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <h1 className=' text-white text-[18px]'>Tables</h1>
+            </a>
+            
+      </div>
+      <div className=" flex justify-between items-center px-7 mt-5">
+            <a href="/" className=' flex items-center mt-2'>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <h1 className=' text-white text-[18px]'>Charts</h1>
+            </a>
+            
+      </div>
+      <div className=" flex justify-between items-center px-7 mt-5">
+            <a href="/" className=' flex items-center mt-2'>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <h1 className=' text-white text-[18px]'>Icons</h1>
+            </a>
+            
+      </div>
+      <div className=" flex justify-between items-center px-7 mt-5">
+            <a href="/" className=' flex items-center mt-2'>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <h1 className=' text-white text-[18px]'>Maps</h1>
+            </a>
+            
+      </div>
+      
+      </div>
       </div>
     </div>
   )
