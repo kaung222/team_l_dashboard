@@ -4,9 +4,6 @@ import { HiMiniPhoto } from "react-icons/hi2";
 import { HiDesktopComputer } from "react-icons/hi";
 import DropdownBtn from "./DropdownBtn";
 const Status = () => {
-
-  
-
   return (
     <div className=" grid md:grid-cols-1 lg:grid-cols-4 gap-5">
       <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow">
