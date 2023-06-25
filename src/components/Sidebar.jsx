@@ -1,8 +1,14 @@
 // import React from 'react'
 import {RiMenu2Line} from 'react-icons/ri'
-import {BsChevronDown, BsChevronUp} from 'react-icons/bs'
+import {BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import {AiFillLock} from 'react-icons/ai'
+import {RiWallet3Fill} from 'react-icons/ri'
+import {BiDotsVerticalRounded,BiMessageDetail} from 'react-icons/bi'
+import {MdAccountCircle} from 'react-icons/md'
+import {FiLifeBuoy,FiSettings} from 'react-icons/fi'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import './ScrollBarStyles.css';
 
 const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
   const [arrow,setArrow] = useState(true)
@@ -57,7 +63,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
     {/* User Dropdown */}
       <div className="">
         <button className="dropdown px-5 py-1 mt-2 w-full ">
-          <div className=" bg-[#308A9B]">
+          <div className=" bg-[#308A9B] rounded-md">
             <div className=" flex justify-between items-center  text-white p-3">
               <div className=" flex">
                 <div className="border rounded-full bg-[#F2F6F7] h-10 flex items-center mt-2">
@@ -73,13 +79,13 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
               </div>
             </div>
           </div>
-          <ul className=" dropdown-content z-[1] rounded bg-white w-[270px] menu">
+          <ul className=" dropdown-content z-[1] rounded bg-white w-[260px] menu">
           {userData?.map(user => (       
             <li onClick={() => setUser(user)} key={user?.id}>
               <div className="flex justify-between items-center text-white">
                 <div className="flex">
                   <div className="border rounded-full bg-[#0C768A] h-10 flex items-center">
-                    <div className="p-4 text-xl font-bold text-[#F2F6F7]">{user?.firstName}</div>
+                    <div className="p-3 text-xl font-bold text-[#F2F6F7]">{user?.firstName}</div>
                   </div>
                   <div className="ml-2 text-left justify-center">
                     <div className="font-bold text-lg text-[#0C768A]">{user?.name}</div>
@@ -266,27 +272,27 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
       </div>
       <div className=" flex justify-between items-center px-7 mt-3">
             <a href="/" className=' flex items-center mt-2'>
-            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path  fill='#86BBC5' d="M12,14.19531a1.00211,1.00211,0,0,1-.5-.13379l-9-5.19726a1.00032,1.00032,0,0,1,0-1.73242l9-5.19336a1.00435,1.00435,0,0,1,1,0l9,5.19336a1.00032,1.00032,0,0,1,0,1.73242l-9,5.19726A1.00211,1.00211,0,0,1,12,14.19531Z"></path><path fill='#86BBC5' d="M21.5,11.13184,19.53589,9.99847,12.5,14.06152a1.0012,1.0012,0,0,1-1,0L4.46411,9.99847,2.5,11.13184a1.00032,1.00032,0,0,0,0,1.73242l9,5.19726a1.0012,1.0012,0,0,0,1,0l9-5.19726a1.00032,1.00032,0,0,0,0-1.73242Z"></path><path fill='white' d="M21.5,15.13184l-1.96411-1.13337L12.5,18.06152a1.0012,1.0012,0,0,1-1,0L4.46411,13.99847,2.5,15.13184a1.00032,1.00032,0,0,0,0,1.73242l9,5.19726a1.0012,1.0012,0,0,0,1,0l9-5.19726a1.00032,1.00032,0,0,0,0-1.73242Z"></path></svg></span>
             <h1 className=' text-white text-[18px]'>UI Elements</h1>
             </a>
       </div>
       <div className=" flex justify-between items-center px-7 mt-3">
             <a href="/" className=' flex items-center mt-2'>
-            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path  fill='#86BBC5' d="M21 8H13a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zM21 12H13a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"></path><rect width="8" height="8" x="2" y="4"  fill='white' rx="1"></rect><path  fill='#86BBC5' d="M21 16H3a1 1 0 0 1 0-2H21a1 1 0 0 1 0 2zM13 20H3a1 1 0 0 1 0-2H13a1 1 0 0 1 0 2z"></path></svg></span>
             <h1 className=' text-white text-[18px]'>Forms</h1>
             </a>
             <span className=' badge badge-error text-white font-bold mt-5'>3</span>
       </div>
       <div className=" flex justify-between items-center px-7 mt-5">
             <a href="/" className=' flex items-center mt-2'>
-            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path fill='white' d="M21,22H3a.99974.99974,0,0,1-1-1V3A.99974.99974,0,0,1,3,2H21a.99974.99974,0,0,1,1,1V21A.99974.99974,0,0,1,21,22ZM4,20H20V4H4Z"></path><path fill='white' d="M9 22a.99974.99974 0 0 1-1-1V3a1 1 0 0 1 2 0V21A.99974.99974 0 0 1 9 22zM15 22a.99974.99974 0 0 1-1-1V3a1 1 0 0 1 2 0V21A.99974.99974 0 0 1 15 22z"></path><path fill='white' d="M21 10H3A1 1 0 0 1 3 8H21a1 1 0 0 1 0 2zM21 16H3a1 1 0 0 1 0-2H21a1 1 0 0 1 0 2z"></path></svg></span>
             <h1 className=' text-white text-[18px]'>Tables</h1>
             </a>
             
       </div>
       <div className=" flex justify-between items-center px-7 mt-5">
             <a href="/" className=' flex items-center mt-2'>
-            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path fill='#86BBC5' d="M12,12V2A10,10,0,0,1,22,12Z"></path><path fill='#86BBC5' d="M12,12l5,8.66022A10.01081,10.01081,0,0,0,22,12Z"></path><path fill='white' d="M17,20.66022,12,12V2a10,10,0,1,0,5.00085,18.66168l.00336-.00427Z"></path></svg></span>
             <h1 className=' text-white text-[18px]'>Charts</h1>
             </a>
             
@@ -300,13 +306,69 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
       </div>
       <div className=" flex justify-between items-center px-7 mt-5">
             <a href="/" className=' flex items-center mt-2'>
-            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" rx="3" className='' fill='#86BBC5'></rect><path d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z" fill='white'></path></svg></span>
+            <span className=' text-2xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path fill='white' d="M15,11H13V9a1,1,0,0,0-2,0v2H9a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V13h2a1,1,0,0,0,0-2Z"></path><path fill='#86BBC5' d="M12,2A10.00082,10.00082,0,0,0,4.25684,18.3291L2.293,20.293A.99991.99991,0,0,0,3,22h9A10,10,0,0,0,12,2Zm3,11H13v2a1,1,0,0,1-2,0V13H9a1,1,0,0,1,0-2h2V9a1,1,0,0,1,2,0v2h2a1,1,0,0,1,0,2Z"></path></svg></span>
             <h1 className=' text-white text-[18px]'>Maps</h1>
             </a>
             
       </div>
       
       </div>
+        
+        {/* Steven Deese */}
+      <div className=" fixed bottom-0 ">
+      <button className="dropdown dropdown-top dropdown-end w-[290px] h-20 bg-[#0C768A]">
+        <div  className=" ml-5 mt-5 mb-2">
+            <div className=" flex items-center justify-between">
+              <img width={'50px'} height={'42px'} className=' rounded-full border-white border-4 pointer-events-none' src="https://themesdesign.in/tocly/layouts/assets/images/users/avatar-2.jpg" alt="" />
+              <h1 className=' text-white text-xl mr-10'>Steven Deese</h1>
+              <BiDotsVerticalRounded className=' text-xl text-white' />
+            </div>
+        </div>
+        <ul  className="dropdown-content z-[1] menu p-3 shadow bg-base-100 rounded-md w-[250px]">
+          <Link to={'/profile'}>
+          <li>
+            <div className=" text-lg text-stone-500">
+              <MdAccountCircle className=' text-xl' />
+              <h1>Profile</h1>
+            </div>
+          </li>
+          </Link>
+          <li>
+            <div className=" text-lg text-stone-500">
+              <BiMessageDetail className=' text-xl' />
+              <h1>Messages</h1>
+            </div>
+          </li>
+          <li>
+            <div className=" text-lg text-stone-500 mb-4">
+              <FiLifeBuoy className=' text-xl' />
+              <h1>Helps</h1>
+            </div>
+          </li>
+          <li>
+            <div className=" text-lg text-stone-500">
+              <RiWallet3Fill className=' text-xl' />
+              <h1>Balance :</h1>
+              <span className=' mr-3 text-black text-[17px] font-bold'>$5971.67</span>
+            </div>
+          </li>
+          <li>
+            <div className=" text-lg text-stone-500">
+              <FiSettings className=' text-xl' />
+              <h1>Setting :</h1>
+              <span className='bg-stone-500 text-sm rounded-lg px-2 text-white'>New</span>
+            </div>
+          </li>
+          <li>
+            <div className=" text-lg text-stone-500">
+              <AiFillLock className=' text-xl' />
+              <h1>Lock Screen</h1>
+            </div>
+          </li>
+        </ul>
+      </button>
+      </div>
+
       </div>
     </div>
   )
