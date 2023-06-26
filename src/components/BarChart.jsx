@@ -1,23 +1,29 @@
 import ReactApexChart from "react-apexcharts";
 
-const Chart = () => {
+const BarChart = () => {
 
   const series = [
     {
       name: "Offline",
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      color: "#38c786",
     },
     {
       name: "Online",
       data: [19, 36, 24, 20, 34, 24, 11, 36, 24, 15, 21, 28],
+      color: "#0c768a",
     },
     {
       name: "Marketing",
       data: [7, 12, 10, 12, 11, 10, 13, 10, 12, 8, 13, 13],
+      color: "#daeaee",
     },
   ];
 
   const options = {
+    dataLabels: {
+      enabled: false,
+    },
     chart: {
       type: "bar",
       height: 350,
@@ -69,7 +75,8 @@ const Chart = () => {
       ],
     },
     legend: {
-      show: false,
+      show: true,
+      position: "bottom",
     },
     fill: {
       colors: ["#38c786", "#0c768a", "#daeaee"], // Specify the colors you want
@@ -88,4 +95,4 @@ const Chart = () => {
   );
 };
 
-export default Chart;
+export default BarChart;

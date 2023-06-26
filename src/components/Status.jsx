@@ -3,10 +3,11 @@ import { BsArrowDownLeft, BsArrowUpRight } from "react-icons/bs";
 import { HiMiniPhoto } from "react-icons/hi2";
 import { HiDesktopComputer } from "react-icons/hi";
 import DropdownBtn from "./DropdownBtn";
+
 const Status = () => {
   return (
     <div className=" grid md:grid-cols-1 lg:grid-cols-4 gap-5">
-      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow">
+      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow hover:bg-slate-50">
         <div className="w-[60px] bg-[#0c758a2f] rounded h-[50px] flex justify-center items-center">
           <BiSolidBriefcaseAlt2 className=" text-2xl text-[#0c768a]" />
         </div>
@@ -27,7 +28,7 @@ const Status = () => {
           <DropdownBtn />
         </div>
       </div>
-      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow">
+      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow hover:bg-slate-50">
         <div className="w-[60px] bg-[#0c758a2f] rounded h-[50px] flex justify-center items-center">
           <BiSolidLayer className=" text-2xl text-[#0c768a]" />
         </div>
@@ -48,7 +49,7 @@ const Status = () => {
           <DropdownBtn />
         </div>
       </div>
-      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow">
+      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow hover:bg-slate-50">
         <div className="w-[60px] bg-[#0c758a2f] rounded h-[50px] flex justify-center items-center">
           <HiMiniPhoto className=" text-2xl text-[#0c768a]" />
         </div>
@@ -69,7 +70,7 @@ const Status = () => {
           <DropdownBtn />
         </div>
       </div>
-      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow">
+      <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow hover:bg-slate-50">
         <div className="w-[60px] bg-[#0c758a2f] rounded h-[50px] flex justify-center items-center">
           <HiDesktopComputer className=" text-2xl text-[#0c768a]" />
         </div>

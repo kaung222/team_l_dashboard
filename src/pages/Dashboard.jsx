@@ -1,9 +1,10 @@
-import Chart from "../components/Chart";
+import BarChart from "../components/BarChart";
 import Layout from "../components/Layout";
-import Pie from "../components/Pie";
+import PieChart from "../components/PieChart";
 import Status from "../components/Status";
 
 const Dashboard = () => {
+  
   return (
     <Layout>
       <div className="p-5">
@@ -31,10 +32,14 @@ const Dashboard = () => {
             </div>
             <div className="flex items-center justify-center">
               <div className=" w-[400px] py-5 px-6 border-e border-slate-100">
-                <Chart />
+                <BarChart />
               </div>
-              <div className=" w-[350px] py-5 px-3 border-e border-slate-100">
-                <Pie />
+              <div className=" w-[250px] py-5 px-6 border-e border-slate-100  relative">
+                <PieChart />
+                <div className=" absolute top-[40%] left-[33%]">
+                  <h4 className=" text-slate-400 font-semibold">Total value</h4>
+                  <h2 className=" text-2xl font-semibold">$75871</h2>
+                </div>
               </div>
             </div>
           </div>
