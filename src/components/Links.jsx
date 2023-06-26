@@ -66,7 +66,7 @@ export default function Links() {
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1SvWn-rz1xLVlqak0wkwUOGKujo2C-xDtc8XTEZ-gQ&s"
           alt=""
-          className="w-[30px]"
+          className="w-[35px]"
         />
       </Button>
       <Menu
@@ -79,14 +79,14 @@ export default function Links() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <div className="grid grid-cols-3 p-2">
+        <div className="grid grid-cols-3 p-2 gap-10">
           {data.map((item) => {
             return (
               <div
                 className="flex items-center w-full cursor-pointer justify-center flex-col"
                 key={item.id}
               >
-                <img src={item.image} className="w-[50px]" alt="" />
+                <img src={item.image} className="w-[30px]" alt="" />
                 <p className="text-center mt-2 text-lg text-slate-400">
                   {item.name}
                 </p>

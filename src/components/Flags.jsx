@@ -50,7 +50,7 @@ const Flags = () => {
       <AnimatePresence>
         {show && (
           <motion.div
-            className={`absolute w-[150px] bg-white shadow-md py-5 shadow-slate-200 top-[60px] -translate-x-[100%]`}
+            className={`absolute w-[200px] cursor-pointer bg-white shadow-md py-5 pr-10 shadow-slate-200 top-[60px] -translate-x-[100%]`}
             initial={{ y: 10, opacity: 0.6 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3 }}
@@ -60,7 +60,7 @@ const Flags = () => {
             {data.map((item, index) => {
               return (
                 <div
-                  className="flex py-1 items-center justify-start gap-3 px-3"
+                  className="flex items-center justify-start gap-3 mb-4 mr-10 ml-5 "
                   key={index}
                 >
                   <img src={item.image} alt="" className="w-[30px]" />

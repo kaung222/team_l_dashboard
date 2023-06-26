@@ -9,26 +9,26 @@ const Layout = ({ children }) => {
   return (
     <>
 
-        {isSidebarOpen && (
+        {/* {isSidebarOpen && (
               <div className="bg-[#0C768A] h-screen fixed top-0 left-0 w-[320px] overflow-auto">
                 <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
               </div>
-        )}
+        )} */}
 
-      <div className=" ml-[300px] h-16 bg-blue-400">
+      <div className=" ml-[300px] h-20 bg-blue-400">
         <Navbar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
 
-      <div className="bg-slate-200 min-h-screen fixed top-0 left-0 w-[300px]">
-        <Sidebar />
+      <div className="bg-[#0C768A] h-screen fixed top-0 left-0 w-[320px] overflow-auto">
+        <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
       </div>
 
-      <div className=" md:ml-[300px] h-16 bg-blue-400">
 
-      <div className=" ml-[300px] h-[60px] bg-blue-400">
+      <div className="">
 
-        <Navbar />
+        {/* <Navbar /> */}
 
         {children}
+      </div>
       </div>
     </>
   );
