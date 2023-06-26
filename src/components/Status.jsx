@@ -5,6 +5,7 @@ import { HiDesktopComputer } from "react-icons/hi";
 import DropdownBtn from "./DropdownBtn";
 
 const Status = () => {
+
   return (
     <div className=" grid md:grid-cols-1 lg:grid-cols-4 gap-5">
       <div className="flex gap-3 md:justify-around justify-center items-center px-3 py-2 shadow hover:bg-slate-50">
@@ -93,6 +94,9 @@ const Status = () => {
       </div>
     </div>
   );
+
+  return <div className="flex items-start justify-between"></div>;
+
 };
 
 export default Status;
