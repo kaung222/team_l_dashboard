@@ -95,7 +95,6 @@ const Status = () => {
     </div>
   );
 
-  return <div className="flex items-start justify-between"></div>;
 
 };
 
