@@ -22,12 +22,12 @@ const Setting = () => {
           e.stopPropagation();
         }}
       >
-        <BsGear className="text-xl" />
+        <BsGear className="text-2xl" />
       </button>
       <AnimatePresence>
         {show && (
           <motion.div
-            className={`absolute top-0 right-0 w-[300px] bg-white shadow-md shadow-slate-200 h-screen`}
+            className={`absolute top-0 right-0 w-[350px] bg-white shadow-md shadow-slate-200 h-screen z-50`}
             initial={{ x: 300 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.3 }}
