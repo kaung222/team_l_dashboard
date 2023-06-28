@@ -5,7 +5,6 @@ import Sidebar from "./Sidebar";
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
   const [isSidebarOpen,setSidebarOpen] = useState(true)
-  console.log(isSidebarOpen)
 
   return (
     <>
