@@ -6,20 +6,19 @@ import Links from "./Links";
 import Notifications from "./Notifications";
 import Search from "./Search";
 import Setting from "./Setting";
-
-// const Navbar = ({isSidebarOpen,setSidebarOpen}) => {
-//   return <div className="w-full h-full">
-//     {!isSidebarOpen && (
-//       <button onClick={() => setSidebarOpen(true)} className=" text-white text-3xl font-bold">
-//            <RiMenu2Line />
-//           </button>
-//             )}
-//   </div>;
+import { RiMenu2Line } from "react-icons/ri";
 
 
-const Navbar = () => {
+
+const Navbar = ({isSidebarOpen,setSidebarOpen}) => {
   return (
+
     <div className="w-full h-full px-3 bg-[#F5F8F9] flex items-center justify-between">
+      {!isSidebarOpen && (
+        <button onClick={() => setSidebarOpen(true)} className=" ml-5 text-black text-3xl font-bold">
+           <RiMenu2Line />
+         </button>
+           )}
       <p className="text-2xl font-bold text-stone-600 p-10">Dashboard</p>
       <div className="flex items-center h-full justify-center gap-2">
         <Search />
