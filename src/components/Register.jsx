@@ -93,7 +93,7 @@ const Register = () => {
                       </button>
                     </div>
                     <div className="mt-4 pt-2 relative">
-                      <hr className="w-full mt-1 mx-4" />
+                      <hr className="w-[300px] mt-1 ms-24 me-4" />
                       <p className="absolute top-0.5 left-1/2 bg-white text-sm font-semibold transform -translate-x-1/2">
                         Sign Up with
                       </p>
@@ -195,7 +195,7 @@ const Register = () => {
                   Sign Up with
                 </p>
               </div>
-              <div className="flex gap-2 justify-center items-center mt-10">
+              <div className="flex gap-2 justify-center items-center mt-8">
                 <button className="bg-[#0c768a] px-2 py-2 text-xl rounded text-white">
                   <BiLogoFacebook />
                 </button>
@@ -209,7 +209,7 @@ const Register = () => {
                   <IoLogoTwitter />
                 </button>
               </div>
-              <div className="flex gap-1 mx-5 mt-7 justify-center items-center">
+              <div className="flex gap-1 mx-5 mt-3 justify-center items-center">
                 <p className="text-center text-sm text-slate-600">{`already have an account?`}</p>
                 <Link to={"/login"}>
                   <p className="text-[#0c768a] text-sm font-semibold">Login</p>
