@@ -4,7 +4,7 @@ import logoImg from "../images/logo-dark.png";
 import { BiLogoFacebook, BiLogoGithub } from "react-icons/bi";
 import { BsGoogle } from "react-icons/bs";
 import { IoLogoTwitter } from "react-icons/io";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react"
 
 const Register = () => {
