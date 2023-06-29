@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import HalfDonut from "./HalfDonut";
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import { AiOutlineArrowRight } from 'react-icons/ai';
@@ -8,18 +8,15 @@ import { BsThreeDotsVertical } from 'react-icons/bs';
 import Drop from "./Drop";
 import SaleDrop from "./SaleDrop";
 import TopDrop from "./TopDrop";
-=======
 import { BiSolidBriefcaseAlt2, BiSolidLayer } from "react-icons/bi";
 import { BsArrowDownLeft, BsArrowUpRight } from "react-icons/bs";
 import { HiMiniPhoto } from "react-icons/hi2";
 import { HiDesktopComputer } from "react-icons/hi";
 import DropdownBtn from "./DropdownBtn";
 
->>>>>>> 152c247d0b0d6a7e35c8badad46f8b47378fdec6
 const Status = () => {
 
   return (
-<<<<<<< HEAD
 
 
 
@@ -556,8 +553,6 @@ const Status = () => {
 
         </div>
 
-
-=======
     <div className=" grid md:grid-cols-1 lg:grid-cols-4 gap-5 px-5">
       <div className="flex gap-3 bg-white md:justify-around justify-center items-center px-3 py-2 shadow hover:bg-slate-50">
         <div className="w-[60px] bg-[#0c758a2f] rounded h-[50px] flex justify-center items-center">
@@ -642,19 +637,11 @@ const Status = () => {
         <div className=" self-start relative">
           <DropdownBtn />
         </div>
->>>>>>> 152c247d0b0d6a7e35c8badad46f8b47378fdec6
       </div>
     </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
+    </div>
 
 
   );

@@ -8,14 +8,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-<<<<<<< HEAD
-      <div className="bg-black min-h-screen hidden sm:block fixed top-0 left-0 w-[250px]">
-        <Sidebar />
-      </div>
-      <div className="  h-16 bg-blue-400">
-        {/* <Navbar /> */}
-        {children}
-=======
+
 
         {isSidebarOpen && (
       <div className="bg-[#0C768A] h-screen fixed top-0 left-0 w-[320px] overflow-auto">
@@ -28,7 +21,6 @@ const Layout = ({ children }) => {
           <div className="">
             {children}
           </div>
->>>>>>> 152c247d0b0d6a7e35c8badad46f8b47378fdec6
       </div>
     </>
   );

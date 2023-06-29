@@ -18,12 +18,9 @@
     "chart.js": "^4.3.0",
     "daisyui": "^3.1.6",
     "framer-motion": "^10.12.17",
-<<<<<<< HEAD
     "highcharts": "^11.1.0",
     "highcharts-react-official": "^3.2.0",
-=======
     "jquery": "^3.7.0",
->>>>>>> 152c247d0b0d6a7e35c8badad46f8b47378fdec6
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
     "react-chartjs-2": "^5.2.0",
