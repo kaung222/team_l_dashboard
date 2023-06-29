@@ -1,16 +1,24 @@
 import BarChart from "../components/BarChart";
 import Layout from "../components/Layout";
+
+import Map from "../components/Map"
 import PieChart from "../components/PieChart";
+
 import Status from "../components/Status";
 
 const Dashboard = () => {
   
   return (
     <Layout>
-      <div className="p-5">
+
+      {/* <div className=""> */}
+       
+
+      <div className="p-5 bg-[#F5F8F9]">
+
         <Status />
-        <div className=" flex">
-          <div className=" shadow w-full my-5">
+        <div className="flex justify-between ">
+          <div className=" shadow w-full my-5 mx-10 bg-white">
             <div className=" flex justify-between items-center">
               <h4 className=" text-slate-700 font-semibold p-5">
                 Audiences Metrics
@@ -43,7 +51,15 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="shadow w-full my-5 bg-black h-5"></div>
+
+          <div className="shadow-xl w-full mt-5 mr-20 bg-white">
+            <div className=" flex gap-7 p-5">
+              <h1 className=" text-xl font-bold text-stone-600">Live User By Country</h1>
+              <button className=" bg-[#F5F8F9] text-[#0C7691] px-3 rounded-md py-1 hover:bg-[#0C768A] hover:text-white">Export Report</button>
+            </div>
+            <Map />
+          </div>
+
         </div>
       </div>
     </Layout>

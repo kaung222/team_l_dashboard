@@ -1,5 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @tailwind base; */
 
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+
+.svgMap{
+    width: 300px;
+    height: 300px;
+}
+
+.active{
+    background-color: black;
+}
 

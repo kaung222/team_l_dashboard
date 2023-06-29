@@ -1,6 +1,7 @@
 // import React from 'react'
 import {RiMenu2Line} from 'react-icons/ri'
-import {BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import { motion } from 'framer-motion'
+import {BsChevronDown } from 'react-icons/bs'
 import {AiFillLock} from 'react-icons/ai'
 import {RiWallet3Fill} from 'react-icons/ri'
 import {BiDotsVerticalRounded,BiMessageDetail} from 'react-icons/bi'
@@ -10,9 +11,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './ScrollBarStyles.css';
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
 const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
-  const [arrow,setArrow] = useState(true)
-  console.log(arrow)
   const [user,setUser]  = useState({
     id : 4,
     name : 'Reporting',
@@ -46,16 +46,22 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
     }
   ]
   return (
-    <div className=''>
+    <motion.div
+    animate={{ x: 0 }}
+    initial={{ x: "-350px" }}
+    exit={{ x: "350px" }}
+    className=''>
       {/* Sidebar */}
       <div className="">
         {/* Sidebar Brand */}
-        <div className=" justify-between items-center px-5 py-8 hidden xl:flex">
+        <div className=" justify-between items-center px-5 py-8 flex">
+        <Link to={'/'}>
           <a href="" className=''>
             <span className=''>
               <img className=' w-[104px]' src="https://themesdesign.in/tocly/layouts/assets/images/logo-light.png" alt="" />
             </span>
           </a>
+        </Link>
           <button onClick={() => setSidebarOpen(false)} className=" text-white text-3xl font-bold">
            <RiMenu2Line />
           </button>
@@ -370,7 +376,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
       </div>
 
       </div>
-    </div>
+    </motion.div>
   )
 }
 
