@@ -3,7 +3,7 @@ import { Navigate } from 'react-router'
 
 const Guard = ({children}) => {
     const userData = JSON.parse(localStorage.getItem('userData'))
-    if(userData) return children;
+    if(userData?.token) return children;
     else return <Navigate to={'/login'} />
 }
 

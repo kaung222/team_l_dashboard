@@ -6,16 +6,24 @@ import { BsGoogle } from "react-icons/bs";
 import { IoLogoTwitter } from "react-icons/io";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react"
+import axios from "axios";
 
 const Register = () => {
-  const [username,setUserName] = useState("");
-  const [password,setPassword] = useState('')
-  const Navigate = useNavigate()
-  const loginHandler = (e) => {
-      e.preventDefault()
-      const user = {username,password}
-      const userdata = localStorage.setItem( "userData" , JSON.stringify(user))
-      Navigate('/')
+  const [loading,setLoading] =  useState(false)
+  const [email,setemail] = useState("admin@gmail.com");
+  const [password,setPassword] = useState('admin123')
+  const navigate = useNavigate();
+
+  const loginHandler = async(e) => {
+    setLoading(true)
+    e.preventDefault()
+    const user = {email,password}
+    const {data} =await axios.post('https://contact-app.mmsdev.site/api/v1/login',user)
+    console.log(data)
+     if(data?.success){
+      navigate('/')
+      localStorage.setItem( "userData" , JSON.stringify({user:data?.user,token:data?.token}))
+     }
   }
   return (
     <>
@@ -44,8 +52,8 @@ const Register = () => {
                     </p>
                     <div className="relative mx-5 mt-7">
                       <input
-                        value={username}
-                        onChange={e => setUserName(e.target.value)}
+                        value={email}
+                        onChange={e => setemail(e.target.value)}
                         type="text"
                         id="username"
                         className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
@@ -87,11 +95,10 @@ const Register = () => {
                     </div>
 
                     <div className="flex justify-center mt-5 max-w-[460px] mx-auto">
-                      <Link to={'/'}>
+
                         <button className="bg-[#0c768a] text-white py-2 text-sm px-4 rounded w-full flex-shrink-0">
-                          Sign In
+                          {loading ? "Loading" : "Sign In"}
                         </button>
-                      </Link>
                     </div>
                     <div className=" mt-24 pt-2 relative">
                       <hr className="w-[300px] mt-1 ms-24 me-4" />
