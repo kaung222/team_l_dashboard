@@ -73,9 +73,11 @@ const Register = () => {
                     </div>
 
                     <div className="flex justify-center mt-5 max-w-[460px] mx-auto">
-                      <button className="bg-[#0c768a] text-white py-2 text-sm px-4 rounded w-full flex-shrink-0">
-                        Sign In
-                      </button>
+                      <Link to={'/'}>
+                        <button className="bg-[#0c768a] text-white py-2 text-sm px-4 rounded w-full flex-shrink-0">
+                          Sign In
+                        </button>
+                      </Link>
                     </div>
                     <div className=" mt-24 pt-2 relative">
                       <hr className="w-[300px] mt-1 ms-24 me-4" />
@@ -182,7 +184,9 @@ const Register = () => {
               <div className="flex gap-1 mx-5 mt-14 justify-center items-center">
                 <p className="text-center text-sm text-slate-600">{`already have an account?`}</p>
                 <Link to={"/register"}>
-                  <p className="text-[#0c768a] text-sm font-semibold">Register</p>
+                  <p className="text-[#0c768a] text-sm font-semibold">
+                    Register
+                  </p>
                 </Link>
               </div>
             </form>
