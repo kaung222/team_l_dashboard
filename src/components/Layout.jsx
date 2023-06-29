@@ -5,11 +5,11 @@ import Sidebar from "./Sidebar";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="bg-slate-200 min-h-screen fixed top-0 left-0 w-[300px]">
+      <div className="bg-black min-h-screen hidden sm:block fixed top-0 left-0 w-[250px]">
         <Sidebar />
       </div>
-      <div className=" ml-[300px] h-16 bg-blue-400">
-        <Navbar />
+      <div className="  h-16 bg-blue-400">
+        {/* <Navbar /> */}
         {children}
       </div>
     </>
