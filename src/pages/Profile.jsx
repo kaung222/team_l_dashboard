@@ -21,15 +21,15 @@ const Profile = () => {
             {/* Tabs */}
             <div className="">
                 <ul className=" flex justify-between border-b-2 cursor-pointer">
-                    <li onClick={() => setActiveTab("About")} className={ " text-xl flex items-center flex-col px-32 pb-5"}>
+                    <li onClick={() => setActiveTab("About")} className={` ${activeTab === "About" && 'border-b-4 border-blue-400 bg-blue-300'} text-xl flex items-center flex-col px-32 pb-5 pt-5`}>
                         <RiShieldUserLine className="" />
                         <h1>About</h1>
                     </li>
-                    <li onClick={() => setActiveTab("Tasks")} className=" text-lg flex items-center flex-col px-32 pb-5">
+                    <li onClick={() => setActiveTab("Tasks")} className={` ${activeTab === "Tasks" && 'border-b-4 border-blue-400 bg-blue-300'} text-xl flex items-center flex-col px-32 pb-5 pt-5`}>
                         <TfiClipboard />
                         <h1>Tasks</h1>
                     </li>
-                    <li onClick={() => setActiveTab("Messages")} className=" text-lg flex items-center flex-col px-32 pb-5">
+                    <li onClick={() => setActiveTab("Messages")} className={` ${activeTab === "Messages" && 'border-b-4 border-blue-400 bg-blue-300'} text-xl flex items-center flex-col px-32 pb-5 pt-5`}>
                         <AiOutlineMail />
                         <h1>Message</h1>
                     </li>
