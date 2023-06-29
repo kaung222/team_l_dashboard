@@ -11,6 +11,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Guard> <Dashboard /> </Guard> } />
+        {/* <Route path="/map" element={<Map />} /> */}
+        <Route path="/test" element={<Test />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

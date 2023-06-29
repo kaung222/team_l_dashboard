@@ -1,7 +1,7 @@
 // import React from 'react'
 import {RiMenu2Line} from 'react-icons/ri'
 import { motion } from 'framer-motion'
-import {BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import {BsChevronDown } from 'react-icons/bs'
 import {AiFillLock} from 'react-icons/ai'
 import {RiWallet3Fill} from 'react-icons/ri'
 import {BiDotsVerticalRounded,BiMessageDetail} from 'react-icons/bi'
@@ -11,6 +11,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './ScrollBarStyles.css';
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
 const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
   const [user,setUser]  = useState({
     id : 4,

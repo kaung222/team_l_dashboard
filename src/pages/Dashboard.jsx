@@ -1,14 +1,24 @@
 import BarChart from "../components/BarChart";
 import Layout from "../components/Layout";
+<<<<<<< HEAD
+
+
+=======
 import Map from "../components/Map"
 import PieChart from "../components/PieChart";
+>>>>>>> 152c247d0b0d6a7e35c8badad46f8b47378fdec6
 import Status from "../components/Status";
 
 const Dashboard = () => {
   
   return (
     <Layout>
+<<<<<<< HEAD
+      <div className="">
+       
+=======
       <div className="p-5 bg-[#F5F8F9]">
+>>>>>>> 152c247d0b0d6a7e35c8badad46f8b47378fdec6
         <Status />
         <div className="flex justify-between ">
           <div className=" shadow w-full my-5 mx-10 bg-white">
