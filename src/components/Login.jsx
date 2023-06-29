@@ -4,9 +4,19 @@ import logoImg from "../images/logo-dark.png";
 import { BiLogoFacebook, BiLogoGithub } from "react-icons/bi";
 import { BsGoogle } from "react-icons/bs";
 import { IoLogoTwitter } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useState } from "react"
 
 const Register = () => {
+  const [username,setUserName] = useState("");
+  const [password,setPassword] = useState('')
+  const Navigate = useNavigate()
+  const loginHandler = (e) => {
+      e.preventDefault()
+      const user = {username,password}
+      const userdata = localStorage.setItem( "userData" , JSON.stringify(user))
+      Navigate('/')
+  }
   return (
     <>
       <div
@@ -25,7 +35,7 @@ const Register = () => {
               </div>
               <div className="bg-white w-full sm:w-[480px] rounded-r">
                 <div className="mt-12">
-                  <form>
+                  <form onSubmit={loginHandler}>
                     <h4 className="font-bold text-center text-lg">
                       Welcome Back !
                     </h4>
@@ -34,6 +44,8 @@ const Register = () => {
                     </p>
                     <div className="relative mx-5 mt-7">
                       <input
+                        value={username}
+                        onChange={e => setUserName(e.target.value)}
                         type="text"
                         id="username"
                         className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
@@ -49,6 +61,8 @@ const Register = () => {
                     </div>
                     <div className="relative mx-5 mt-7">
                       <input
+                       value={password}
+                       onChange={e => setPassword(e.target.value)}
                         type="password"
                         id="password"
                         className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
