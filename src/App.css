@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 @tailwind base;
 
 @layer base {
@@ -15,3 +16,15 @@
 
 @tailwind components;
 @tailwind utilities;
+=======
+
+.svgMap{
+    width: 300px;
+    height: 300px;
+}
+
+.active{
+    background-color: black;
+}
+
+>>>>>>> 152c247d0b0d6a7e35c8badad46f8b47378fdec6

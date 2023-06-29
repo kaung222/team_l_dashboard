@@ -1,0 +1,5 @@
+.custom-checkbox:checked {
+  --tw-bg-opacity: 1;
+  background-color: green;
+  border-color: greenyellow;
+}

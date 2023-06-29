@@ -1,0 +1,16 @@
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+  }
+  
+  /* Scrollbar Track */
+  ::-webkit-scrollbar-track {
+    background: #0C768A; /* Change the background color as needed */
+  }
+  
+  /* Scrollbar Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #308A9B; /* Change the handle color as needed */
+  }
+  
+  
