@@ -7,7 +7,6 @@ import {AiOutlineMail} from 'react-icons/ai'
 import Layout from "../components/Layout"
 import About from "../components/Profile/About"
 import Task from "../components/Profile/Task"
-import Message from "../components/Profile/Message"
 
 const Profile = () => {
     const [activeTab,setActiveTab] = useState("About")
@@ -20,7 +19,7 @@ const Profile = () => {
         <div className="col-span-3 mr-10 bg-white">
             {/* Tabs */}
             <div className="">
-                <ul className=" flex justify-between border-b-2 cursor-pointer">
+                <ul className=" flex border-b-2 cursor-pointer">
                     <li onClick={() => setActiveTab("About")} className={` ${activeTab === "About" && 'border-b-4 border-blue-400 bg-blue-300'} text-xl flex items-center flex-col px-32 pb-5 pt-5`}>
                         <RiShieldUserLine className="" />
                         <h1>About</h1>
@@ -29,15 +28,10 @@ const Profile = () => {
                         <TfiClipboard />
                         <h1>Tasks</h1>
                     </li>
-                    <li onClick={() => setActiveTab("Messages")} className={` ${activeTab === "Messages" && 'border-b-4 border-blue-400 bg-blue-300'} text-xl flex items-center flex-col px-32 pb-5 pt-5`}>
-                        <AiOutlineMail />
-                        <h1>Message</h1>
-                    </li>
                 </ul>
             </div>
             {activeTab === "About" && <About /> }
             {activeTab === "Tasks" && <Task /> }
-            {activeTab === "Messages" && <Message /> }
         </div>
         <div className=" p-10">
           {/* Skill */}

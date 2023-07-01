@@ -54,7 +54,7 @@ export default function Links() {
   };
 
   return (
-    <div className="h-full">
+    <div className="h-full hidden md:block">
       <Button
         id="fade-button"
         aria-controls={open ? "fade-menu" : undefined}
