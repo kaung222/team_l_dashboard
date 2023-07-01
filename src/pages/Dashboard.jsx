@@ -2,6 +2,7 @@ import Charts from "../components/Charts"
 import Copy from "../components/Copy"
 import Layout from "../components/Layout";
 import Status from "../components/Status";
+import Table from "../components/Table";
 
 const Dashboard = () => {
   
@@ -12,6 +13,7 @@ const Dashboard = () => {
         <Status />
         <Charts />
         <Copy/>
+        <Table/>
       </div>
       </div>
     </Layout>
