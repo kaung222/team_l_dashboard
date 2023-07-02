@@ -6,7 +6,7 @@ const Search = () => {
       <BsSearch className=" text-slate-500 text-xl" />
       <input
         type="text"
-        className="border-none outline-none ml-2 p-1 text-black"
+        className="border-none outline-none ml-2 p-1 text-black bg-white"
         placeholder="Search..."
       />
     </div>
