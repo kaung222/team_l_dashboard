@@ -1,17 +1,17 @@
+import { Doughnut } from "react-chartjs-2";
 import {
+  Chart,
   ArcElement,
   CategoryScale,
-  Chart,
-  LineElement,
   LinearScale,
   PointElement,
+  LineElement,
 } from "chart.js";
-import { Doughnut } from "react-chartjs-2";
 
 Chart.register(
-  LinearScale,
   ArcElement,
   CategoryScale,
+  LinearScale,
   PointElement,
   LineElement
 );
@@ -19,7 +19,6 @@ Chart.register(
 const DoughnutChart = () => {
   // Register necessary elements in Chart.js
   Chart.register();
-
 
   // Data for the doughnut chart
   const data = {
@@ -39,11 +38,10 @@ const DoughnutChart = () => {
       legend: {
         display: true,
         position: "top",
-        align: 'center'
+        align: "center",
       },
     },
   };
-
 
   return <Doughnut data={data} options={options} />;
 };

@@ -1,4 +1,4 @@
-
+/* eslint-disable react/prop-types */
 // import { RiMenu2Line } from "react-icons/ri";
 import Flags from "./Flags";
 import FullScreen from "./FullScreen";
