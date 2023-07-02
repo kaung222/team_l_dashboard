@@ -1,5 +1,12 @@
-import React, { Children } from 'react'
-import { Navigate } from 'react-router'
+// import React, { Children } from 'react'
+// import { Navigate } from 'react-router'
+
+
+// const Guard = ({children}) => {
+//     const userData = JSON.parse(localStorage.getItem('userData'))
+//     if(userData) return children;
+//     else return <Navigate to={'/login'} />
+// }
 
 const Guard = ({children}) => {
     const userData = JSON.parse(localStorage.getItem('userData'))
@@ -7,4 +14,5 @@ const Guard = ({children}) => {
     else return <Navigate to={'/login'} />
 }
 
-export default Guard
+
+// export default Guard
