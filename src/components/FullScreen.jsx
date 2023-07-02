@@ -5,7 +5,7 @@ const FullScreen = () => {
     window.fullScreen();
   };
   return (
-    <div className="h-full">
+    <div className="h-full hidden md:block">
       <button className="h-full px-3" onClick={handleFullscreen}>
         <MdFullscreen className="text-[30px]" />
       </button>

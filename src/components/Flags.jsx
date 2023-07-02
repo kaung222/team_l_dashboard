@@ -32,7 +32,7 @@ const Flags = () => {
     setShow(false);
   });
   return (
-    <div className="h-full">
+    <div className="h-full hidden md:block">
       <button
         className="h-full px-3"
         onClick={(e) => {
