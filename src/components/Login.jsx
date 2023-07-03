@@ -20,6 +20,7 @@ const Register = () => {
     const user = {email,password}
     const {data} =await axios.post('https://contact-app.mmsdev.site/api/v1/login',user)
     console.log(data)
+    console.log(data)
      if(data?.success){
       navigate('/')
       localStorage.setItem( "userData" , JSON.stringify({user:data?.user,token:data?.token}))
@@ -54,7 +55,7 @@ const Register = () => {
                       <input
                         value={email}
                         onChange={e => setemail(e.target.value)}
-                        type="text"
+                        type="email"
                         id="username"
                         className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
                         required
@@ -96,7 +97,7 @@ const Register = () => {
 
                     <div className="flex justify-center mt-5 max-w-[460px] mx-auto">
 
-                        <button className="bg-[#0c768a] text-white py-2 text-sm px-4 rounded w-full flex-shrink-0">
+                        <button type="submit" className="bg-[#0c768a] text-white py-2 text-sm px-4 rounded w-full flex-shrink-0">
                           {loading ? "Loading" : "Sign In"}
                         </button>
                     </div>
@@ -135,13 +136,15 @@ const Register = () => {
           </div>
           <div className="sm:hidden">
             {/* Content for phone screens */}
-            <form>
+            <form onSubmit={loginHandler}>
               <h4 className="font-bold text-center text-lg">Welcome Back !</h4>
               <p className="text-slate-400 text-center">
                 Sign in to continue to Tocly.
               </p>
               <div className="relative mx-5 mt-7">
                 <input
+                  value={email}
+                  onChange={e => setemail(e.target.value)}
                   type="text"
                   id="username"
                   className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
@@ -157,6 +160,8 @@ const Register = () => {
               </div>
               <div className="relative mx-5 mt-7">
                 <input
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
                   type="password"
                   id="password"
                   className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
