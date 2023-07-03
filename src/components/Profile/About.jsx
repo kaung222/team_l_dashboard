@@ -4,7 +4,7 @@ import {BiDotsVerticalRounded} from 'react-icons/bi'
 const About = () => {
   return (
     <div>
-      <div className=" p-10 w-[400px]">
+      <div className=" p-10">
         {/* experiences */}
         <div className="">
           <h1 className=" text-xl font-bold text-stone-600 mb-5">Experiences</h1>
