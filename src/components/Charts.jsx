@@ -4,9 +4,8 @@ import Map from './Map'
 
 const Charts = () => {
   return (
-    <div className="md:flex justify-between
-  ">
-    <div className=" shadow w-full my-5 mx-7 bg-white">
+    <div className="md:flex justify-between ">
+    <div className=" shadow w-full my-5 mx-5 bg-white">
       <div className=" flex justify-between items-center">
         <h4 className=" text-slate-700 font-semibold p-5">
           Audiences Metrics
@@ -26,24 +25,24 @@ const Charts = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center">
-        <div className=" w-[350px] py-5 px-6 border-e border-slate-100">
+      <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-24 mx-5">
+        <div className=" w-[400px] py-5 px-6  border-slate-100">
           <BarChart />
         </div>
-        <div className=" w-[200px] py-5 px-6 border-e border-slate-100  relative">
+        <div className=" w-[250px] py-5 px-6  border-slate-100  relative">
           <PieChart />
-          <div className=" absolute top-[35%] left-[30%]">
-            <h4 className=" text-slate-400 font-semibold text-lg">Total value</h4>
-            <h2 className=" text-xl font-semibold">$75871</h2>
+          <div className=" absolute top-[40%] left-[32%]">
+            <h4 className=" text-slate-400 text-lg">Total value</h4>
+            <h2 className=" text-2xl font-semibold">$75871</h2>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div className="shadow  h-[400px] md:h-[470px] w-full mt-5 bg-white">
+    <div className="shadow  h-[400px] md:h-[470px] w-1/3 mt-5 bg-white">
       <div className=" flex gap-7 p-3">
-        <h1 className=" text-xl font-bold text-stone-600">Live User By Country</h1>
+        <h1 className="  font-bold text-stone-600">Live User By Country</h1>
         <button className=" bg-[#F5F8F9] text-[#0C7691] px-3 rounded-md py-1 hover:bg-[#0C768A] text-sm hover:text-white">Export Report</button>
       </div>
       <Map />

@@ -53,7 +53,7 @@ const PieChart = () => {
     ],
   };
   const options = {
-    cutout: "80%",
+    cutout: "75%",
     plugins: {
       legend: {
         display: true,
@@ -63,7 +63,7 @@ const PieChart = () => {
     },
   };
 
-  return <Doughnut width={'170px'} height={'170px'} data={data} options={options} />;
+  return <Doughnut width={'350px'} height={'350px'} data={data} options={options} />;
 };
 
 export default PieChart;
