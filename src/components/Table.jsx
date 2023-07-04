@@ -6,7 +6,7 @@ import { FaCcVisa } from "react-icons/fa";
 import { FaCcPaypal } from "react-icons/fa";
 const Table = () => {
   return (
-    <div className="flex-col sm:w-[1200px] h-[450px] bg-white w-[320px] mx-10 my-10">
+    <div className="flex-col sm:w-[1050px] h-[450px] bg-white shadow w-[320px] mx-10 my-10">
       <div>
         <div className="   ml-3  flex justify-between px-4 mt-3">
           <div className="font-semibold text-16 text-gray-700 mt-3 h-4">
@@ -23,8 +23,8 @@ const Table = () => {
         </div>
       </div>
       <div className="mt-3 ">
-        <div className="overflow-x-scroll w-[328px] sm:w-[1200px] ">
-          <table className="min-w-full text-left text-lg font-light mx-3">
+        <div className="overflow-x-scroll w-[328px] sm:w-[1030px] ">
+          <table className="min-w-full text-left text-md font-light mx-3">
             <thead className="border-b font-medium dark:border-neutral-500">
               <tr>
                 <th scope="col" className="px-2 py-2 text-gray-700 ">
