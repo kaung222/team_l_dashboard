@@ -16,10 +16,10 @@ const Layout = ({ children }) => {
           />
         </div>
       )}
-      <div className={`h-20 ${isSidebarOpen && "ml-[300px]"}`}>
+      <div className='h-20'>
         <Navbar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
-        <div className="">{children}</div>
       </div>
+        <div className={` overflow-hidden ${isSidebarOpen && "ml-[300px]"}`}>{children}</div>
     </>
   );
 };

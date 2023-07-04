@@ -18,7 +18,7 @@ export default function Notifications() {
   };
 
   return (
-    <div className="h-full relative">
+    <div className="h-full relative mr-20">
         <p className=" w-2 rounded-full h-2 top-6 left-9 bg-red-500 absolute"></p>
       <Button
         id="fade-button"

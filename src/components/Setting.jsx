@@ -15,7 +15,7 @@ const Setting = () => {
   return (
     <div className="h-full">
       <button
-        className="h-full px-3"
+        className="h-full px-3 hidden md:block"
         onClick={(e) => {
           setShow(!show);
           e.preventDefault();
