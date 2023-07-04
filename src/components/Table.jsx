@@ -24,7 +24,7 @@ const Table = () => {
       </div>
       <div className="mt-3 ">
         <div className="overflow-x-scroll w-[328px] sm:w-[1030px] ">
-          <table className="min-w-full text-left text-md font-light mx-3">
+          <table className="min-w-full text-left text-sm font-light mx-3">
             <thead className="border-b font-medium dark:border-neutral-500">
               <tr>
                 <th scope="col" className="px-2 py-2 text-gray-700 ">

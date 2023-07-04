@@ -21,7 +21,7 @@ const Copy = () => {
           <div className="mt-[17px] flex">
             <div className="className='rubik-500  font-semibold text-16 text-gray-700 ml-[17px]   w-20">
               <div className="text-[#47484a]  sm:w-[80px] w-[172px] mt-3">
-                Source of Purchases{" "}
+                Source of Purchases
               </div>
             </div>
             <div className=" mt-[12px] flex sm:w-[190px] sm:ml-7 w-[210px] ml-[90px]">
@@ -287,7 +287,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiArrowTrendingUp />
                       </div>
@@ -327,7 +326,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-red-300 text-lg">
                         <HiArrowTrendingDown />
                       </div>
@@ -367,7 +365,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiMiniArrowTrendingUp />
                       </div>
@@ -407,7 +404,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-red-300 text-lg">
                         <HiArrowTrendingDown />
                       </div>
@@ -447,7 +443,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiMiniArrowTrendingUp />
                       </div>
@@ -487,7 +482,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-red-300 text-lg">
                         <HiArrowTrendingDown />
                       </div>
@@ -526,7 +520,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiMiniArrowTrendingUp />
                       </div>
@@ -623,7 +616,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiArrowTrendingUp />
                       </div>
@@ -663,7 +655,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-red-300 text-lg">
                         <HiArrowTrendingDown />
                       </div>
@@ -703,7 +694,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiMiniArrowTrendingUp />
                       </div>
@@ -743,7 +733,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-red-300 text-lg">
                         <HiArrowTrendingDown />
                       </div>
@@ -783,7 +772,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiMiniArrowTrendingUp />
                       </div>
@@ -823,7 +811,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-red-300 text-lg">
                         <HiArrowTrendingDown />
                       </div>
@@ -862,7 +849,6 @@ const Copy = () => {
                   </td>
                   <td className="whitespace-nowrap px-2 py-2">
                     <div className="flex gap-2">
-                      {" "}
                       <div className="mt-0 text-green-300 text-lg">
                         <HiMiniArrowTrendingUp />
                       </div>
