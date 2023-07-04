@@ -7,6 +7,8 @@ import {
   PointElement,
   LineElement,
 } from "chart.js";
+// import 'react-chartjs-2/dist/react-chartjs-2.css'
+// import 'chart.js'
 
 Chart.register(
   ArcElement,
@@ -16,7 +18,24 @@ Chart.register(
   LineElement
 );
 
-const DoughnutChart = () => {
+const PieChart = () => {
+  const series = [
+    {
+      name: "Offline",
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      color: "#38c786",
+    },
+    {
+      name: "Online",
+      data: [19, 36, 24, 20, 34, 24, 11, 36, 24, 15, 21, 28],
+      color: "#0c768a",
+    },
+    {
+      name: "Marketing",
+      data: [7, 12, 10, 12, 11, 10, 13, 10, 12, 8, 13, 13],
+      color: "#daeaee",
+    },
+  ];
   // Register necessary elements in Chart.js
   Chart.register();
 
@@ -43,7 +62,7 @@ const DoughnutChart = () => {
     },
   };
 
-  return <Doughnut data={data} options={options} />;
+  return <Doughnut width={'170px'} height={'170px'} data={data} options={options} />;
 };
 
-export default DoughnutChart;
+export default PieChart;

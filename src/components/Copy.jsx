@@ -18,7 +18,7 @@ const Copy = () => {
 
         {/* Source of Purcases */}
         {/* title */}
-        <div className='block bg-white  sm:w-[290px] sm:h-[456px] sm:ml-[21px] sm:mr-[24px]  sm:mt-[19px] 
+        <div className='block bg-white  sm:w-[350px] sm:h-[470px] sm:ml-[21px] sm:mr-[10px]  sm:mt-[19px] 
           mx-4 w-[326px] justify-center'>
           <div className="mt-[17px] flex">
             <div className="className='rubik-500  font-semibold text-16 text-gray-700 ml-[17px]   w-20">
@@ -48,7 +48,7 @@ const Copy = () => {
             </div>
 
             {/* 3box */}
-            <div className="flex mt-[27px] gap-[17px]">
+            <div className="flex mt-[27px] gap-[17px] pb-5">
               {/* box1 */}
               <div>
                 <div className="flex">
@@ -87,7 +87,7 @@ const Copy = () => {
         </div>
 
         {/* Sales Statistics */}
-        <div className="block bg-white sm:w-[290px] sm:h-[476px] sm:mt-[19px]
+        <div className="block bg-white sm:w-[300px] sm:h-[470px] sm:mt-[19px]
               w-[329px] h-[423px] mt-[19px]  justify-center">
           <div className="    flex ">
             <div className="className='rubik-500  font-semibold text-16  text-gray-700 ml-[17px] w-[144px] mt-[18px]">Sales Statistics</div>
