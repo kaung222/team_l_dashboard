@@ -40,8 +40,10 @@ const Profile = () => {
                 </li>
               </ul>
             </div>
+          <div className="">
             {activeTab === "About" && <About />}
             {activeTab === "Tasks" && <Task />}
+          </div>
           </div>
           <div className=" p-10">
             {/* Skill */}

@@ -47,9 +47,6 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
   ]
   return (
     <motion.div
-    animate={{ x: 0 }}
-    initial={{ x: "-350px" }}
-    exit={{ x: "350px" }}
     className=''>
       {/* Sidebar */}
       <div className="">
@@ -67,7 +64,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
           </button>
         </div>
     {/* User Dropdown */}
-      <div className="">
+      <div className=" hidden md:block">
         <button className="dropdown px-5 py-1 mt-2 w-full ">
           <div className=" bg-[#308A9B] rounded-md">
             <div className=" flex justify-between items-center  text-white p-3">
@@ -322,7 +319,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
         
         {/* Steven Deese */}
       <div className=" fixed bottom-0 ">
-      <button className="dropdown dropdown-top dropdown-end w-[290px] h-20 bg-[#0C768A]">
+      <button className="dropdown dropdown-top dropdown-end w-[250px] md:w-[290px] h-20 bg-[#0C768A]">
         <div  className=" ml-5 mt-5 mb-2">
             <div className=" flex items-center justify-between">
               <img width={'50px'} height={'42px'} className=' rounded-full border-white border-4 pointer-events-none' src="https://themesdesign.in/tocly/layouts/assets/images/users/avatar-2.jpg" alt="" />
