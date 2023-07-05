@@ -7,8 +7,6 @@ import {
   PointElement,
   LineElement,
 } from "chart.js";
-// import 'react-chartjs-2/dist/react-chartjs-2.css'
-// import 'chart.js'
 
 Chart.register(
   ArcElement,
@@ -19,7 +17,6 @@ Chart.register(
 );
 
 const PieChart = () => {
-  // eslint-disable-next-line no-unused-vars
   const series = [
     {
       name: "Offline",
@@ -37,10 +34,9 @@ const PieChart = () => {
       color: "#daeaee",
     },
   ];
-  // Register necessary elements in Chart.js
+
   Chart.register();
 
-  // Data for the doughnut chart
   const data = {
     labels: ["Red", "Blue", "Yellow"],
     datasets: [
@@ -52,13 +48,22 @@ const PieChart = () => {
       },
     ],
   };
+
   const options = {
     cutout: "75%",
     plugins: {
       legend: {
         display: true,
-        position: "top",
-        align: "center",
+        position: "bottom",
+      },
+      legend: {
+        display: true,
+        position: "bottom",
+      },
+    },
+    elements: {
+      arc: {
+        backgroundColor: ["#38c786", "#0c768a", "#daeaee"],
       },
     },
   };

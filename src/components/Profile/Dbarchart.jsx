@@ -1,6 +1,6 @@
 import ReactApexChart from "react-apexcharts";
 
-const BarChart = () => {
+const Dbarchart= () => {
 
   const series = [
     {
@@ -89,11 +89,11 @@ const BarChart = () => {
         options={options}
         series={series}
         type="bar"
-        width={300}
+        width={420}
         height={350}
       />
     </div>
   );
 };
 
-export default BarChart;
+export default Dbarchart;

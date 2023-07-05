@@ -79,14 +79,14 @@ export default function Links() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <div className="grid grid-cols-3 p-2 gap-10">
+        <div className="grid grid-cols-3  gap-10">
           {data.map((item) => {
             return (
               <div
                 className="flex items-center w-full cursor-pointer justify-center flex-col"
                 key={item.id}
               >
-                <img src={item.image} className="w-[30px]" alt="" />
+                <img src={item.image} className="w-[20px]" alt="" />
                 <p className="text-center mt-2 text-lg text-slate-400">
                   {item.name}
                 </p>

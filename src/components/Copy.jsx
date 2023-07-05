@@ -11,21 +11,21 @@ import TopDrop from "./TopDrop";
 const Copy = () => {
   return (
     <>
-      <div className=" bg-transparent  sm:flex  sm:justify-around   ">
+      <div className=" bg-transparent  sm:flex  sm:justify-evenly sm:w-[100%] sm:gap-3  ">
         {/* Source of Purcases */}
         {/* title */}
         <div
-          className="block bg-white shadow  sm:w-[350px] sm:h-[500px] sm:ml-[21px] sm:mr-[10px]  sm:mt-[19px] 
-          mx-4 w-[326px] justify-center"
+          className="block bg-white shadow  sm:w-[29%] sm:h-[500px] sm:ml-[21px] sm:mr-[10px]  sm:mt-[19px] 
+          mx-4 w-[90%] justify-center"
         >
-          <div className="mt-[17px] flex">
+          <div className="mt-[17px] flex justify-between ">
             <div className="className='rubik-500  font-semibold text-16 text-gray-700 ml-[17px]   w-20">
-              <div className="text-[#47484a]  sm:w-[80px] w-[172px] mt-3">
+              <div className="text-[#47484a]  sm:w-[100px] w-[172px] mt-3">
                 Source of Purchases
               </div>
             </div>
-            <div className=" mt-[12px] flex sm:w-[190px] sm:ml-7 w-[210px] ml-[90px]">
-              <div className="font-semibold text-sm text-gray-700 mt-[3px] sm:ml-9">
+            <div className=" mt-[12px] flex     ">
+              <div className="font-semibold text-sm text-gray-700 mt-[3px] ">
                 Sort By:
               </div>
 
@@ -41,7 +41,7 @@ const Copy = () => {
           </div>
 
           {/* half donut */}
-          <div className="h-[65vh] flex justify-center items-center flex-col">
+          <div className="h-[65vh] mt-4 flex justify-center items-center flex-col">
             <HalfDonut />
             {/* text */}
             <div className="text-sm text-gray-700 font-normal">
@@ -95,23 +95,26 @@ const Copy = () => {
 
         {/* Sales Statistics */}
         <div
-          className="block bg-white shadow sm:w-[300px] sm:h-[500px] sm:mt-[19px]
-              w-[329px] h-[423px] mt-[19px]  justify-center"
+          className="block bg-white shadow sm:w-[27%] sm:h-[500px] sm:mt-[19px]
+              w-[90%] ml-3 h-[423px] mt-[19px]  justify-center"
         >
-          <div className="    flex ">
-            <div className="className='rubik-500  font-semibold text-16  text-gray-700 ml-[17px] w-[144px] mt-[18px]">
+          <div className="    flex sm:w-[100%] justify-between px-3 sm:justify-between sm:px-3 ">
+            <div className="className='rubik-500  font-semibold text-16  text-gray-700  w-[144px] mt-[18px]">
               Sales Statistics
             </div>
 
-            <div className="font-normal text-[#83838d] text-sm sm:ml-[30px] mt-[19px] ml-16">
-              Today
+            <div className="flex">
+              <div className="font-normal text-[#83838d] text-sm sm:ml-[30px] mt-[19px] ">
+                Today
+              </div>
+              <div className="mt-[21px]">
+                <SaleDrop />
+              </div>
             </div>
-            <div className="mt-[21px]">
-              <SaleDrop />
-            </div>
+
           </div>
 
-          <div className="mt-[25px] ml-[17px] font-bold text-xl  text-[#4B5563]">
+          <div className="mt-[15px] ml-[17px] font-bold text-xl  text-[#4B5563]">
             725,800
           </div>
 
@@ -128,7 +131,7 @@ const Copy = () => {
           </div>
 
           {/* block */}
-          <div className="flex ml-[17px] mt-[30px]">
+          <div className="flex ml-[17px] mt-[20px] sm:w-[90%]">
             <div className="h-[14px] w-[124px] bg-[#0c768a] rounded-l-full"></div>
             <div className="h-[14px] w-[66px] bg-[#38c786]"></div>
             <div className="h-[14px] w-[68px] bg-[#daeaee] rounded-r-full"></div>
@@ -136,7 +139,7 @@ const Copy = () => {
 
           {/* table */}
 
-          <div className="overflow-x-scroll w-[259px] h-[193px] mt-[30px] ml-[17px]">
+          <div className="overflow-x-scroll w-[90%] sm:w-[90%] h-[193px] mt-[20px] ml-[17px]">
             <style>
               {`
        .overflow-x-scroll::-webkit-scrollbar {
@@ -208,7 +211,7 @@ const Copy = () => {
             </table>
           </div>
 
-          <div className="bg-[#0C768A] w-[97px] rounded h-[30px] flex sm:mt-[50px] ml-[98px] text-sm font-normal mt-[15px]">
+          <div className="bg-[#0C768A] w-[97px] rounded h-[30px] flex  sm:mt-[50px] ml-[98px] text-sm font-normal mt-[12px]">
             <div className="text-white text-xs mt-[7px] ml-[5px]">
               View More
             </div>
@@ -219,21 +222,23 @@ const Copy = () => {
         </div>
 
         {/* Top Users */}
-        <div className="sm:block hidden bg-white shadow w-[424px] h-[500px] mt-[19px] sm:ml-4">
+        <div className="sm:block hidden bg-white shadow w-[39%]  h-[500px] mt-[19px] sm:ml-4">
           {/* title */}
-          <div className="flex mt-[20px] ml-[17px]">
+          <div className="flex mt-[20px] px-3 sm:w-[100%] justify-between">
             <div className="font-semibold text-16 text-gray-700">Top Users</div>
-            <div className="ml-[195px] font-semibold text-sm  text-gray-700">
-              Sort By:
-            </div>
-            <div className="font-normal text-[#83838d] text-sm">yearly</div>
-            <div className="mt-[3px]">
-              <TopDrop />
+            <div className="flex">
+              <div className=" font-semibold text-sm  text-gray-700">
+                Sort By:
+              </div>
+              <div className="font-normal text-[#83838d] text-sm">yearly</div>
+              <div className="mt-[3px]">
+                <TopDrop />
+              </div>
             </div>
           </div>
 
           {/* overflow */}
-          <div className="overflow-scroll  h-[357px] w-[390px]  mt-[40px] ml-[17px] ">
+          <div className="overflow-scroll  h-[357px] sm:w-[97%] sm:ml-2  mt-[40px] px-3 ">
             <style>
               {`
 .overflow-scroll::-webkit-scrollbar {
@@ -544,9 +549,9 @@ const Copy = () => {
 
         {/* for mobile top user */}
 
-        <div className="sm:hidden bg-white w-[331px] h-[417px] mt-[19px]">
+        <div className="sm:hidden bg-white w-[90%] ml-4 h-[435px] mt-[19px]">
           {/* title */}
-          <div className="flex  justify-between px-3 mt-4">
+          <div className="flex  justify-between px-3 mt-4 py-3">
             <div className="font-semibold text-16 text-gray-700 ">
               Top Users
             </div>
@@ -562,7 +567,7 @@ const Copy = () => {
           </div>
 
           {/* overflow */}
-          <div className="overflow-scroll  h-[355px] w-[296px]  mt-[10px] ml-[17px] ">
+          <div className="overflow-scroll  h-[355px] w-[90%]  mt-[10px] ml-[17px] ">
             <style>
               {`
 .overflow-scroll::-webkit-scrollbar {
