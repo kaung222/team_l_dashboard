@@ -20,7 +20,7 @@ const Navbar = ({ isSidebarOpen, setSidebarOpen }) => {
         </button>
       )}
       <div className={`flex ${isSidebarOpen?"justify-end gap-52":"justify-between"} w-[100%] items-center`}>
-        <p className="text-2xl font-bold text-stone-600 p-3 ">Dashboard</p>
+        <p className="text-2xl font-bold text-stone-600 p-3 hidden md:block">Dashboard</p>
         <div className="flex items-center   gap-2">
           <Search />
           <Flags />
