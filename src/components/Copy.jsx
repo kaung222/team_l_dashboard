@@ -51,7 +51,7 @@ const Copy = () => {
             </div>
 
             {/* 3box */}
-            <div className="flex mt-[27px] gap-[17px] pb-5">
+            <div className="flex mt-[27px] gap-[17px] pb-20">
               {/* box1 */}
               <div>
                 <div className="flex">
@@ -61,7 +61,7 @@ const Copy = () => {
                 <div className="font-normal text-xs mt-[18px] ">
                   E-COMMER...
                 </div>
-                <div className="font-semibold text-xl mt-[8px] text-[#4B5563]">
+                <div className="font-semibold text-lg mt-[8px] text-[#4B5563]">
                   52,524
                 </div>
               </div>
@@ -72,7 +72,7 @@ const Copy = () => {
                   <div className="h-[7px] w-[24px] bg-slate-100 rounded-r-full"></div>
                 </div>
                 <div className="font-normal text-xs mt-[18px] ">FACEBOOK</div>
-                <div className="font-semibold text-xl mt-[8px] text-[#4B5563]">
+                <div className="font-semibold text-lg mt-[8px] text-[#4B5563]">
                   52,524
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Copy = () => {
                 <div className="font-normal text-xs mt-[18px] ">
                   INSTAGRA...
                 </div>
-                <div className="font-semibold text-xl mt-[8px] text-[#4B5563]">
+                <div className="font-semibold text-lg mt-[8px] text-[#4B5563]">
                   52,524
                 </div>
               </div>
