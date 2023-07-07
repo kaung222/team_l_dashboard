@@ -11,7 +11,7 @@ import TopDrop from "./TopDrop";
 const Copy = () => {
   return (
     <>
-      <div className=" bg-transparent  sm:flex  sm:justify-evenly sm:w-[100%] sm:gap-3  ">
+      <div className=" bg-transparent  sm:flex  sm:justify-evenly sm:w-[100%] sm:gap-3">
         {/* Source of Purcases */}
         {/* title */}
         <div
