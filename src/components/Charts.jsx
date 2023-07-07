@@ -10,7 +10,7 @@ const Charts = () => {
         <div className=" flex justify-between w-[100%] px-5 mt-3 ">
           <div>
             <h4 className=" text-slate-700 font-semibold ">
-              Audiences Metrics
+              Reservation Metrics
             </h4>
           </div>
           <div>
@@ -33,48 +33,45 @@ const Charts = () => {
         <div className="flex flex-wrap   lg:flex-nowrap items-center justify-center  mx-5">
           <div className="sm:hidden py-5 px-6  border-slate-100">
             <BarChart />
-
           </div>
-          <div className='sm:block hidden py-5 px-6  border-slate-100'><Dbarchart /></div>
+          <div className="sm:block hidden py-5 px-6  border-slate-100">
+            <Dbarchart />
+          </div>
           <div className=" w-[250px] py-5 px-6  border-slate-100  relative">
             <PieChart />
             <div className=" absolute top-[30%] left-[32%]">
-              <h4 className=" text-slate-400 text-lg">Total value</h4>
-              <h2 className=" text-2xl font-semibold">$75871</h2>
+              <h4 className=" text-slate-400 text-lg">Total Rooms</h4>
+              <h2 className=" text-2xl font-semibold text-center">5,871</h2>
             </div>
-            <div className='flex justify-evenly mt-5'>
-              <div className='flex gap-1'>
-                <div class="rounded-full mt-1 bg-[#0c768a] w-3 h-3 "></div>
-                <div className='text-sm'>Online</div>
+            <div className="flex justify-evenly mt-5">
+              <div className="flex gap-1">
+                <div className="rounded-full mt-1 bg-[#EEC68C] w-3 h-3 "></div>
+                <div className="text-sm">Premiere</div>
               </div>
-              <div className='flex gap-1'>
-                <div className="rounded-full mt-1 bg-[#38c786] w-3 h-3 "></div>
-                <div className='text-sm'>Offline</div>
+              <div className="flex gap-1">
+                <div className="rounded-full mt-1 bg-[#F7F5EF] w-3 h-3 border"></div>
+                <div className="text-sm">Superior</div>
               </div>
             </div>
-            <div className='flex gap-1 justify-center mt-2'>
-              <div class="rounded-full mt-1 bg-[#daeaee] w-3 h-3 "></div>
-              <div className='text-sm'>Offline</div>
+            <div className="flex gap-1 justify-center mt-2">
+              <div className="rounded-full mt-1 bg-[#daeaee] w-3 h-3 "></div>
+              <div className="text-sm">Master</div>
             </div>
-
-
-
-
           </div>
-
         </div>
       </div>
 
       <div className="shadow ml-4  items-center flex  flex-col sm:w-[28%] w-[90%]  h-[400px] md:h-[440px] bg-white sm:mt-5">
         <div className="w-[100%] flex justify-between px-3 sm:mt-5 ">
-          <h1 className="  font-bold text-stone-600">Live User By Country</h1>
-          <button className=" bg-[#F5F8F9] text-[#0C7691]  rounded-md  hover:bg-[#0C768A] text-sm hover:text-white">Export Report</button>
+          <h1 className="  font-bold text-stone-600">Countries of Visitors</h1>
+          <button className=" bg-[#F5F8F9] text-[#EEC68C]  rounded-md  hover:bg-[#0C768A] text-sm hover:text-white">
+            Export Report
+          </button>
         </div>
         <Map />
       </div>
-
     </div>
-  )
+  );
 }
 
 export default Charts

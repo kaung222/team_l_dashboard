@@ -55,11 +55,11 @@ const Copy = () => {
               {/* box1 */}
               <div>
                 <div className="flex">
-                  <div className="h-[7px] w-[57px] bg-[#0c768a] rounded-l-full"></div>
+                  <div className="h-[7px] w-[57px] bg-[#EEC68C] rounded-l-full"></div>
                   <div className="h-[7px] w-[9px] bg-slate-100 rounded-r-full"></div>
                 </div>
-                <div className="font-normal text-xs mt-[18px] ">
-                  E-COMMER...
+                <div className="font-normal text-xs mt-[18px]">
+                  PAYPAL
                 </div>
                 <div className="font-semibold text-lg mt-[8px] text-[#4B5563]">
                   52,524
@@ -68,10 +68,12 @@ const Copy = () => {
               {/*box2*/}
               <div>
                 <div className="flex">
-                  <div className="h-[7px] w-[51px] bg-[#38c786] rounded-l-full"></div>
+                  <div className="h-[7px] w-[51px] bg-[#F2E8CC] rounded-l-full"></div>
                   <div className="h-[7px] w-[24px] bg-slate-100 rounded-r-full"></div>
                 </div>
-                <div className="font-normal text-xs mt-[18px] ">FACEBOOK</div>
+                <div className="font-normal text-xs mt-[18px] ">
+                  MASTER CARD
+                </div>
                 <div className="font-semibold text-lg mt-[8px] text-[#4B5563]">
                   52,524
                 </div>
@@ -79,11 +81,11 @@ const Copy = () => {
               {/* box3 */}
               <div>
                 <div className="flex">
-                  <div className="h-[7px] w-[44px] bg-[#F4BA40] rounded-l-full"></div>
+                  <div className="h-[7px] w-[44px] bg-[#E1E8E3] rounded-l-full"></div>
                   <div className="h-[7px] w-[29px] bg-slate-100 rounded-r-full"></div>
                 </div>
-                <div className="font-normal text-xs mt-[18px] ">
-                  INSTAGRA...
+                <div className="font-normal text-xs mt-[18px]">
+                  VISA
                 </div>
                 <div className="font-semibold text-lg mt-[8px] text-[#4B5563]">
                   52,524
@@ -111,7 +113,6 @@ const Copy = () => {
                 <SaleDrop />
               </div>
             </div>
-
           </div>
 
           <div className="mt-[15px] ml-[17px] font-bold text-xl  text-[#4B5563]">
@@ -132,9 +133,9 @@ const Copy = () => {
 
           {/* block */}
           <div className="flex ml-[17px] mt-[20px] sm:w-[90%]">
-            <div className="h-[14px] w-[124px] bg-[#0c768a] rounded-l-full"></div>
-            <div className="h-[14px] w-[66px] bg-[#38c786]"></div>
-            <div className="h-[14px] w-[68px] bg-[#daeaee] rounded-r-full"></div>
+            <div className="h-[14px] w-[124px] bg-[#EEC68C] rounded-l-full"></div>
+            <div className="h-[14px] w-[66px] bg-[#F2E8CC]"></div>
+            <div className="h-[14px] w-[68px] bg-[#E1E8E3] rounded-r-full"></div>
           </div>
 
           {/* table */}
@@ -169,13 +170,13 @@ const Copy = () => {
               <thead className="border-b font-medium dark:border-neutral-500">
                 <tr>
                   <th scope="col" className="px-6 py-4">
-                    Order Status
+                    Booking Status
                   </th>
                   <th scope="col" className="px-6 py-4">
-                    Orders
+                    Bookings
                   </th>
                   <th scope="col" className="px-6 py-4">
-                    Returns
+                    CheckIn
                   </th>
                   <th scope="col" className="px-6 py-4">
                     Earnings
@@ -185,7 +186,7 @@ const Copy = () => {
               <tbody>
                 <tr className="border-b dark:border-neutral-500">
                   <td className="whitespace-nowrap px-6 py-2 font-medium">
-                    Product Pending
+                    Booking Pending
                   </td>
                   <td className="whitespace-nowrap px-6 py-2">17,351</td>
                   <td className="whitespace-nowrap px-6 py-2">2,123</td>
@@ -193,7 +194,7 @@ const Copy = () => {
                 </tr>
                 <tr className="border-b dark:border-neutral-500">
                   <td className="whitespace-nowrap px-6 py-2 font-medium">
-                    Product Cancelled
+                    Booking Cancelled
                   </td>
                   <td className="whitespace-nowrap px-6 py-2">67,356</td>
                   <td className="whitespace-nowrap px-6 py-2">3,652</td>
@@ -201,7 +202,7 @@ const Copy = () => {
                 </tr>
                 <tr className="border-b dark:border-neutral-500">
                   <td className="whitespace-nowrap px-6 py-2 font-medium">
-                    Product Delivered
+                    Booking Confirmed
                   </td>
                   <td className="whitespace-nowrap px-6 py-2">67,356</td>
                   <td className="whitespace-nowrap px-6 py-2">3,652</td>
@@ -211,7 +212,7 @@ const Copy = () => {
             </table>
           </div>
 
-          <div className="bg-[#0C768A] w-[97px] rounded h-[30px] flex  sm:mt-[50px] ml-[98px] text-sm font-normal mt-[12px]">
+          <div className="bg-[#EEC68C] w-[97px] rounded h-[30px] flex  sm:mt-[50px] ml-[98px] text-sm font-normal mt-[12px]">
             <div className="text-white text-xs mt-[7px] ml-[5px]">
               View More
             </div>
@@ -225,7 +226,7 @@ const Copy = () => {
         <div className="sm:block hidden bg-white shadow w-[39%]  h-[500px] mt-[19px] sm:ml-4">
           {/* title */}
           <div className="flex mt-[20px] px-3 sm:w-[100%] justify-between">
-            <div className="font-semibold text-16 text-gray-700">Top Users</div>
+            <div className="font-semibold text-16 text-gray-700">Top Visitors</div>
             <div className="flex">
               <div className=" font-semibold text-sm  text-gray-700">
                 Sort By:

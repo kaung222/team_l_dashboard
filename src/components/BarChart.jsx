@@ -4,19 +4,19 @@ const BarChart = () => {
 
   const series = [
     {
-      name: "Offline",
+      name: "Master",
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      color: "#EEC68C",
+      color: "#F2E8CC",
     },
     {
-      name: "Online",
+      name: "Premiere",
       data: [19, 36, 24, 20, 34, 24, 11, 36, 24, 15, 21, 28],
-      color: "#0c768a",
+      color: "#EEC68C",
     },
     {
-      
+      name: "Superior",
       data: [7, 12, 10, 12, 11, 10, 13, 10, 12, 8, 13, 13],
-      color: "#EEC68C",
+      color: "#F2E8CC",
     },
   ];
 

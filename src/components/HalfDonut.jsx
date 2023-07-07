@@ -10,31 +10,31 @@ const HalfDonut = () => {
       marginTop: 90,
     },
     title: {
-      text: 'TOTAL SALES',
-      align: 'center',
-      verticalAlign: 'middle',
+      text: "TOTAL SALES",
+      align: "center",
+      verticalAlign: "middle",
       y: 29,
       style: {
-        fontSize: '14px',
-        color: '#718096', 
-        fontWeight: '400',
+        fontSize: "14px",
+        color: "#718096",
+        fontWeight: "400",
       },
     },
     subtitle: {
-      text: '5,685',
-      align: 'center',
-      verticalAlign: 'middle',
+      text: "5,685",
+      align: "center",
+      verticalAlign: "middle",
       y: 69,
       style: {
-        fontSize: '25px',
-        color: '#4B5563',
-        fontWeight: '600', 
+        fontSize: "25px",
+        color: "#4B5563",
+        fontWeight: "600",
       },
     },
     tooltip: {
-      pointFormat: '{point.name}',
-      headerFormat: '', // Remove the header
-      footerFormat: '', // Remove the footer
+      pointFormat: "{point.name}",
+      headerFormat: "", // Remove the header
+      footerFormat: "", // Remove the footer
       shared: false, // Disable sharing tooltip between points
     },
     plotOptions: {
@@ -47,40 +47,39 @@ const HalfDonut = () => {
         },
         dataLabels: {
           enabled: true,
-          format: '{point.percentage:.1f}%', // Display the percentage
-          distance: -9., // Adjust the distance from the center
+          format: "{point.percentage:.1f}%", // Display the percentage
+          distance: -9, // Adjust the distance from the center
           style: {
-            fontWeight: 'bold',
-            color: 'white', // Set the text color to blue
-            textOutline: 'none',
+            fontWeight: "bold",
+            color: "white", // Set the text color to blue
+            textOutline: "none",
           },
         },
         startAngle: -90,
         endAngle: 90,
-        size: '520%', // Set the inner size to 90%
+        size: "520%", // Set the inner size to 90%
         borderWidth: -0.9,
-        
       },
     },
     series: [
       {
-        type: 'pie',
-        innerSize: '81%',
+        type: "pie",
+        innerSize: "81%",
         data: [
           {
-            name: 'E-Commerce: 38',
+            name: "E-Commerce: 38",
             y: 44.5,
-            color:"#0c768a"
+            color: "#EEC68C",
           },
           {
-            name: 'Facebook: 24',
+            name: "Facebook: 24",
             y: 28.1,
-            color:"#38c786"
+            color: "#F2E8CC",
           },
           {
-            name: 'Instagram: 16',
+            name: "Instagram: 16",
             y: 18.7,
-            color:"#daeaee"
+            color: "#E1E8E3",
           },
         ],
       },

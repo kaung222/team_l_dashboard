@@ -30,16 +30,16 @@ const Table = () => {
                 <BiSquareRounded className="w-[33px]   stroke-slate-100  h-[19px] " />
               </th>
               <th scope="col" className="px-2 py-2 text-gray-700">
-                Order ID
+                Booking ID
               </th>
               <th scope="col" className="px-2 py-2 text-gray-700">
                 Billing Name
               </th>
               <th scope="col" className="px-2 py-2 text-gray-700">
-                IP Address
+                Room Numbers
               </th>
               <th scope="col" className="px-2 py-2">
-                Order Date
+                Booking Date
               </th>
               <th scope="col" className="px-2 py-2 text-gray-700">
                 Total
@@ -72,7 +72,7 @@ const Table = () => {
                 <div className="ml-2 mt-1"> Neal Matthews</div>
               </td>
 
-              <td className="px-2 py-2">cs562xf452dd</td>
+              <td className="px-2 py-2">301</td>
               <td className=" px-2 py-2">07 Oct, 2022</td>
               <td className=" px-2 py-2">$400</td>
               <td className=" px-2 py-1 flex">
@@ -88,7 +88,7 @@ const Table = () => {
               </td>
               <td>
                 <div className=" px-2 py-2  h-7 flex gap-2 mt-[-11px]">
-                  <div className="bg-green-400 w-[25px] rounded flex justify-center items-center  h-[23px] ">
+                  <div className="bg-[#EEC68C] w-[25px] rounded flex justify-center items-center  h-[23px] ">
                     <BiSolidPencil className="text-white" />
                   </div>
                   <div className="bg-red-400 w-[25px] rounded  flex justify-center items-center h-[25px] ">
@@ -113,7 +113,7 @@ const Table = () => {
                 <div className="ml-2 mt-1"> Jamal Burnett</div>
               </td>
 
-              <td className="px-2 py-2">ar252xf658dd</td>
+              <td className="px-2 py-2">402</td>
               <td className=" px-2 py-2">07 Oct, 2022</td>
               <td className=" px-2 py-2">$380</td>
               <td className=" px-2 py-1 flex">
@@ -129,7 +129,7 @@ const Table = () => {
               </td>
               <td>
                 <div className=" px-2 py-2  h-7 flex gap-2 mt-[-11px]">
-                  <div className="bg-green-400 w-[25px] rounded flex justify-center items-center  h-[23px] ">
+                  <div className="bg-[#EEC68C] w-[25px] rounded flex justify-center items-center  h-[23px] ">
                     <BiSolidPencil className="text-white" />
                   </div>
                   <div className="bg-red-400 w-[25px] rounded  flex justify-center items-center h-[25px] ">
@@ -154,7 +154,7 @@ const Table = () => {
                 <div className="ml-2 mt-1"> Juan Mitchell</div>
               </td>
 
-              <td className="px-2 py-2">op632xf223dd</td>
+              <td className="px-2 py-2">511</td>
               <td className=" px-2 py-2">06 Oct, 2022</td>
               <td className=" px-2 py-2">$384</td>
               <td className=" px-2 py-1 flex">
@@ -170,7 +170,7 @@ const Table = () => {
               </td>
               <td>
                 <div className=" px-2 py-2  h-7 flex gap-2 mt-[-11px]">
-                  <div className="bg-green-400 w-[25px] rounded flex justify-center items-center  h-[23px] ">
+                  <div className="bg-[#EEC68C] w-[25px] rounded flex justify-center items-center  h-[23px] ">
                     <BiSolidPencil className="text-white" />
                   </div>
                   <div className="bg-red-400 w-[25px] rounded  flex justify-center items-center h-[25px] ">
@@ -195,7 +195,7 @@ const Table = () => {
                 <div className="ml-2 mt-1"> Barry Dick</div>
               </td>
 
-              <td className="px-2 py-2">ty756xf985dd</td>
+              <td className="px-2 py-2">110</td>
               <td className=" px-2 py-2">05 Oct, 2022</td>
               <td className=" px-2 py-2">$412</td>
               <td className=" px-2 py-1 flex">
@@ -211,7 +211,7 @@ const Table = () => {
               </td>
               <td>
                 <div className=" px-2 py-2  h-7 flex gap-2 mt-[-11px]">
-                  <div className="bg-green-400 w-[25px] rounded flex justify-center items-center  h-[23px] ">
+                  <div className="bg-[#EEC68C] w-[25px] rounded flex justify-center items-center  h-[23px] ">
                     <BiSolidPencil className="text-white" />
                   </div>
                   <div className="bg-red-400 w-[25px] rounded  flex justify-center items-center h-[25px] ">
@@ -236,7 +236,7 @@ const Table = () => {
                 <div className="ml-2 mt-1"> Ronald Taylor</div>
               </td>
 
-              <td className="px-2 py-2">jf754xf431dd</td>
+              <td className="px-2 py-2">607</td>
               <td className=" px-2 py-2">04 Oct, 2022</td>
               <td className=" px-2 py-2">$380</td>
               <td className=" px-2 py-1 flex">
@@ -252,7 +252,7 @@ const Table = () => {
               </td>
               <td>
                 <div className=" px-2 py-2  h-7 flex gap-2 mt-[-11px]">
-                  <div className="bg-green-400 w-[25px] rounded flex justify-center items-center  h-[23px] ">
+                  <div className="bg-[#EEC68C] w-[25px] rounded flex justify-center items-center  h-[23px] ">
                     <BiSolidPencil className="text-white" />
                   </div>
                   <div className="bg-red-400 w-[25px] rounded  flex justify-center items-center h-[25px] ">
@@ -277,7 +277,7 @@ const Table = () => {
                 <div className="ml-2 mt-1"> Jacob Hunter</div>
               </td>
 
-              <td className="px-2 py-2">fd964xf467dd</td>
+              <td className="px-2 py-2">504</td>
               <td className=" px-2 py-2">04 Oct, 2022</td>
               <td className=" px-2 py-2"> $392</td>
               <td className=" px-2 py-1 flex">
@@ -293,7 +293,7 @@ const Table = () => {
               </td>
               <td>
                 <div className=" px-2 py-2  h-7 flex gap-2 mt-[-11px]">
-                  <div className="bg-green-400 w-[25px] rounded flex justify-center items-center  h-[23px] ">
+                  <div className="bg-[#EEC68C] w-[25px] rounded flex justify-center items-center  h-[23px] ">
                     <BiSolidPencil className="text-white" />
                   </div>
                   <div className="bg-red-400 w-[25px] rounded  flex justify-center items-center h-[25px] ">

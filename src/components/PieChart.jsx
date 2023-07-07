@@ -17,9 +17,10 @@ Chart.register(
 );
 
 const PieChart = () => {
+  // eslint-disable-next-line no-unused-vars
   const series = [
     {
-      name: "Offline",
+      name: "Premiere Deluxe Room",
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       color: "#F7F5EF",
     },
@@ -43,8 +44,8 @@ const PieChart = () => {
       {
         label: "Doughnut",
         data: [190, 75, 95],
-        backgroundColor: ["#EEC68C", "#F2E8CC", "#E1E8E3"],
-        hoverBackgroundColor: ["#07414d", "#2da66f", "#a2b7bd"],
+        backgroundColor: ["#EEC68C", "#D9D0B7", "#E1E8E3"],
+        hoverBackgroundColor: ["#D6B27E", "#F2E8CD", "#CAD0CC"],
       },
     ],
   };
@@ -52,10 +53,6 @@ const PieChart = () => {
   const options = {
     cutout: "75%",
     plugins: {
-      legend: {
-        display: true,
-        position: "bottom",
-      },
       legend: {
         display: true,
         position: "bottom",

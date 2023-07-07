@@ -4,19 +4,19 @@ const Dbarchart= () => {
 
   const series = [
     {
-      name: "Offline",
+      name: "Master",
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      color: "#38c786",
+      color: "#E1E8E3",
     },
     {
-      name: "Online",
+      name: "Premiere",
       data: [19, 36, 24, 20, 34, 24, 11, 36, 24, 15, 21, 28],
-      color: "#0c768a",
+      color: "#EEC68C",
     },
     {
-      
+      name: "Superior",
       data: [7, 12, 10, 12, 11, 10, 13, 10, 12, 8, 13, 13],
-      color: "#daeaee",
+      color: "#F2E8CC",
     },
   ];
 
@@ -79,7 +79,7 @@ const Dbarchart= () => {
       position: "bottom",
     },
     fill: {
-      colors: ["#38c786", "#0c768a", "#daeaee"], // Specify the colors you want
+      colors: ["#EEC68C", "#F2E8CC", "#E1E8E3"], // Specify the colors you want
       opacity: 1,
     },
   };
