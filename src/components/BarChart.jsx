@@ -6,7 +6,7 @@ const BarChart = () => {
     {
       name: "Offline",
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      color: "#38c786",
+      color: "#EEC68C",
     },
     {
       name: "Online",
@@ -16,7 +16,7 @@ const BarChart = () => {
     {
       
       data: [7, 12, 10, 12, 11, 10, 13, 10, 12, 8, 13, 13],
-      color: "#daeaee",
+      color: "#EEC68C",
     },
   ];
 
@@ -79,7 +79,7 @@ const BarChart = () => {
       position: "bottom",
     },
     fill: {
-      colors: ["#38c786", "#0c768a", "#daeaee"], // Specify the colors you want
+      colors: ["#EEC68C", "#EEC68C", "#EEC68C"], // Specify the colors you want
       opacity: 1,
     },
   };

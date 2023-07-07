@@ -48,7 +48,7 @@ const Charts = () => {
                 <div className='text-sm'>Online</div>
               </div>
               <div className='flex gap-1'>
-                <div class="rounded-full mt-1 bg-[#38c786] w-3 h-3 "></div>
+                <div className="rounded-full mt-1 bg-[#38c786] w-3 h-3 "></div>
                 <div className='text-sm'>Offline</div>
               </div>
             </div>

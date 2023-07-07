@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <Layout>
       <div className="">
-        <div className="p-5 bg-[#F5F8F9]">
+        <div className="p-5 bg-[#F7F5EF]">
           <Status/>
           <Charts />
           <Copy />

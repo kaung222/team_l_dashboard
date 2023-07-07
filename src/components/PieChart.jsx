@@ -21,7 +21,7 @@ const PieChart = () => {
     {
       name: "Offline",
       data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      color: "#38c786",
+      color: "#F7F5EF",
     },
     {
       name: "Online",
@@ -43,7 +43,7 @@ const PieChart = () => {
       {
         label: "Doughnut",
         data: [190, 75, 95],
-        backgroundColor: ["#0c768a", "#38c786", "#daeaee"],
+        backgroundColor: ["#EEC68C", "#F2E8CC", "#E1E8E3"],
         hoverBackgroundColor: ["#07414d", "#2da66f", "#a2b7bd"],
       },
     ],

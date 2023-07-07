@@ -13,7 +13,7 @@ import { RiMenu2Line } from "react-icons/ri";
 const Navbar = ({ isSidebarOpen, setSidebarOpen }) => {
   return (
 
-    <div className="w-full h-full px-3 bg-[#F5F8F9] flex items-center overflow-hidden">
+    <div className="w-full h-full px-3 bg-white flex items-center overflow-hidden">
       {!isSidebarOpen && (
         <button onClick={() => setSidebarOpen(true)} className=" mx-5 text-black text-3xl font-bold">
           <RiMenu2Line />

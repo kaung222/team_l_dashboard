@@ -47,7 +47,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
   ]
   return (
     <motion.div
-    className=''>
+    className=' text-black'>
       {/* Sidebar */}
       <div className="">
         {/* Sidebar Brand */}
@@ -66,10 +66,10 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
     {/* User Dropdown */}
       <div className=" hidden md:block">
         <button className="dropdown px-5 py-1 mt-2 w-full ">
-          <div className=" bg-[#308A9B] rounded-md">
-            <div className=" flex justify-between items-center  text-white p-3">
+          <div className=" bg-[#F7F5EF] rounded-md">
+            <div className=" flex justify-between items-center  text-black p-3">
               <div className=" flex">
-                <div className="border rounded-full bg-[#F2F6F7] h-10 flex items-center mt-2">
+                <div className="border rounded-full bg-[#F7F5EF] h-10 flex items-center mt-2">
                     <div className=' p-4 text-xl font-bold text-[#0C768A]'>{user?.firstName}</div>
                 </div>
                 <div className=" ml-2 text-left justify-center">
