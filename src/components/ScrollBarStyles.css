@@ -5,12 +5,12 @@
   
   /* Scrollbar Track */
   ::-webkit-scrollbar-track {
-    background: #0C768A; /* Change the background color as needed */
+    background: rgb(124 45 18); /* Change the background color as needed */
   }
   
   /* Scrollbar Handle */
   ::-webkit-scrollbar-thumb {
-    background: #308A9B; /* Change the handle color as needed */
+    background: rgb(124 45 18); /* Change the handle color as needed */
   }
   
   

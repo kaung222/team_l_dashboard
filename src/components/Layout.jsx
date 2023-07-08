@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {isSidebarOpen && (
-        <div className="bg-[#EEC68C] h-full fixed top-0 left-0 w-[250px] md:w-[320px] overflow-auto">
+        <div className="bg-[#EEC68C] h-full fixed top-0 left-0 w-[250px] md:w-[320px]">
           <Sidebar
             isSidebarOpen={isSidebarOpen}
             setSidebarOpen={setSidebarOpen}
