@@ -92,7 +92,7 @@ const Register = () => {
 
                     <div className="flex justify-center mt-5 max-w-[460px] mx-auto">
                       <Link to={"/login"}>
-                        <button className="bg-[#EEC68C] text-white py-2 text-sm px-4 rounded w-full flex-shrink-0">
+                        <button className="bg-[#EEC68C] text-black py-2 text-sm px-4 rounded w-full flex-shrink-0">
                           Sign Up
                         </button>
                       </Link>
@@ -190,7 +190,7 @@ const Register = () => {
               </div>
 
               <div className="w-full mt-5">
-                <button className="bg-[#EEC68C] text-white py-2 text-sm px-4 rounded mx-20">
+                <button className="bg-[#EEC68C] text-black py-2 text-sm px-4 rounded mx-20">
                   Sign Up
                 </button>
               </div>

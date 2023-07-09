@@ -194,7 +194,7 @@ const Register = () => {
               </div>
 
               <div className="w-full mt-5">
-                <button className="bg-[#EEC68C] text-white py-2 text-sm px-4 rounded mx-20">
+                <button className="bg-[#EEC68C] text-black py-2 text-sm px-4 rounded mx-20">
                   Sign In
                 </button>
               </div>
