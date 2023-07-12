@@ -1,6 +1,6 @@
-import backgroundImage from "../images/overlay-1.png";
+
 import imageSrc from "../images/auth.png";
-import logoImg from "../images/logo-dark.png";
+
 import { BiLogoFacebook, BiLogoGithub } from "react-icons/bi";
 import { BsGoogle } from "react-icons/bs";
 import { IoLogoTwitter } from "react-icons/io";
@@ -9,21 +9,24 @@ import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <>
-      <div
-        className="min-h-screen min-w-full bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
+      <div className="min-h-screen min-w-full bg-cover bg-no-repeat bg-[#F2E8CC] md:bg-[#EEC68C]">
         <div className="flex flex-col items-center justify-center">
-          <img src={logoImg} className="w-auto h-auto p-14 pb-1" alt="" />
-          <p className="text-slate-500 text-sm text-center">
-            User Experience & Interface Design Strategy Saas Solution
+          <span className=" mt-10">
+            <img
+              src="https://envato.bdevs.net/royel/wp-content/uploads/2023/05/logo.png"
+              alt=""
+              className="w-[150px]"
+            />
+          </span>
+          <p className="text-slate-500 text-sm text-center mb-5">
+            The New Generation of Luxury
           </p>
           <div className="hidden sm:flex w-full justify-center my-10">
             <div className="flex flex-col sm:flex-row">
-              <div className="bg-custom-primary bg-opacity-100 w-full sm:w-[500px] rounded-l">
+              <div className="bg-[#F2E8CC] bg-opacity-100 w-full sm:w-[500px] rounded-l">
                 <img src={imageSrc} className="w-full h-auto" alt="" />
               </div>
-              <div className="bg-white w-full sm:w-[480px] rounded-r">
+              <div className="bg-[#F2E8CC] w-full sm:w-[480px] rounded-r">
                 <div className="mt-12">
                   <form>
                     <h4 className="font-bold text-center text-lg">
@@ -36,13 +39,13 @@ const Register = () => {
                       <input
                         type="email"
                         id="email"
-                        className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
+                        className="border border-gray-300  bg-[#F2E8CC] rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
                         required
                         placeholder="Enter email"
                       />
                       <label
                         htmlFor="email"
-                        className="absolute left-2 -top-3 px-1 bg-white text-sm font-semibold text-gray-600"
+                        className="absolute left-2 -top-3 px-1 bg-[#F2E8CC] text-sm font-semibold text-gray-600"
                       >
                         Email
                       </label>
@@ -51,13 +54,13 @@ const Register = () => {
                       <input
                         type="text"
                         id="username"
-                        className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
+                        className="border border-gray-300  bg-[#F2E8CC] rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
                         required
                         placeholder="Enter username"
                       />
                       <label
                         htmlFor="username"
-                        className="absolute left-2 -top-3 px-1 bg-white text-sm font-semibold text-gray-600"
+                        className="absolute left-2 -top-3 px-1 bg-[#F2E8CC] text-sm font-semibold text-gray-600"
                       >
                         Username
                       </label>
@@ -66,13 +69,13 @@ const Register = () => {
                       <input
                         type="password"
                         id="password"
-                        className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
+                        className="border border-gray-300  bg-[#F2E8CC] rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
                         required
                         placeholder="Enter password"
                       />
                       <label
                         htmlFor="password"
-                        className="absolute left-2 -top-3 px-1 bg-white text-sm font-semibold text-gray-600"
+                        className="absolute left-2 -top-3 px-1 bg-[#F2E8CC] text-sm font-semibold text-gray-600"
                       >
                         Password
                       </label>
@@ -88,20 +91,20 @@ const Register = () => {
                     </div>
 
                     <div className="flex justify-center mt-5 max-w-[460px] mx-auto">
-                      <Link to={'/login'}>
-                        <button className="bg-[#0c768a] text-white py-2 text-sm px-4 rounded w-full flex-shrink-0">
+                      <Link to={"/login"}>
+                        <button className="bg-[#EEC68C] text-black py-2 text-sm px-4 rounded w-full flex-shrink-0">
                           Sign Up
                         </button>
                       </Link>
                     </div>
                     <div className="mt-4 pt-2 relative">
                       <hr className="w-[300px] mt-1 ms-24 me-4" />
-                      <p className="absolute top-0.5 left-1/2 bg-white text-sm font-semibold transform -translate-x-1/2">
+                      <p className="absolute top-0.5 left-1/2 bg-[#F2E8CC] text-sm font-semibold transform -translate-x-1/2">
                         Sign Up with
                       </p>
                     </div>
                     <div className="flex gap-2 justify-center items-center mt-10">
-                      <button className="bg-[#0c768a] px-2 py-2 text-xl rounded text-white">
+                      <button className="bg-[#EEC68C] px-2 py-2 text-xl rounded text-white">
                         <BiLogoFacebook />
                       </button>
                       <button className="bg-red-500 px-2 py-2 text-xl rounded text-white">
@@ -117,7 +120,7 @@ const Register = () => {
                     <div className="flex gap-1 mx-5 mt-7 justify-center items-center">
                       <p className="text-center text-sm text-slate-600">{`already have an account?`}</p>
                       <Link to={"/login"}>
-                        <p className="text-[#0c768a] text-sm font-semibold">
+                        <p className="text-black text-sm font-semibold">
                           Login
                         </p>
                       </Link>
@@ -138,13 +141,13 @@ const Register = () => {
                 <input
                   type="email"
                   id="email"
-                  className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
+                  className="border border-gray-300  bg-[#F2E8CC] rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
                   required
                   placeholder="Enter email"
                 />
                 <label
                   htmlFor="email"
-                  className="absolute left-2 -top-3 px-1 bg-white text-sm font-semibold text-gray-600"
+                  className="absolute left-2 -top-3 px-1 bg-[#F2E8CC] text-sm font-semibold text-gray-600"
                 >
                   Email
                 </label>
@@ -153,13 +156,13 @@ const Register = () => {
                 <input
                   type="text"
                   id="username"
-                  className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
+                  className="border border-gray-300  bg-[#F2E8CC] rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
                   required
                   placeholder="Enter username"
                 />
                 <label
                   htmlFor="username"
-                  className="absolute left-2 -top-3 px-1 bg-white text-sm font-semibold text-gray-600"
+                  className="absolute left-2 -top-3 px-1 bg-[#F2E8CC] text-sm font-semibold text-gray-600"
                 >
                   Username
                 </label>
@@ -168,13 +171,13 @@ const Register = () => {
                 <input
                   type="password"
                   id="password"
-                  className="border border-gray-300 rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
+                  className="border border-gray-300  bg-[#F2E8CC] rounded-md py-3 px-4 w-full focus:outline-none placeholder-gray-700"
                   required
                   placeholder="Enter password"
                 />
                 <label
                   htmlFor="password"
-                  className="absolute left-2 -top-3 px-1 bg-white text-sm font-semibold text-gray-600"
+                  className="absolute left-2 -top-3 px-1 bg-[#F2E8CC] text-sm font-semibold text-gray-600"
                 >
                   Password
                 </label>
@@ -187,18 +190,18 @@ const Register = () => {
               </div>
 
               <div className="w-full mt-5">
-                <button className="bg-[#0c768a] text-white py-2 text-sm px-4 rounded mx-20">
+                <button className="bg-[#EEC68C] text-black py-2 text-sm px-4 rounded mx-20">
                   Sign Up
                 </button>
               </div>
               <div className="mt-4 pt-2 relative">
                 <hr className=" w-0 md:w-full mt-1 mx-4" />
-                <p className="absolute top-0.5 left-1/2 bg-transparent md:bg-white text-sm font-semibold transform -translate-x-1/2">
+                <p className="absolute top-0.5 left-1/2 bg-transparent md:bg-[#F2E8CC] text-sm font-semibold transform -translate-x-1/2">
                   Sign Up with
                 </p>
               </div>
               <div className="flex gap-2 justify-center items-center mt-8">
-                <button className="bg-[#0c768a] px-2 py-2 text-xl rounded text-white">
+                <button className="bg-[#EEC68C] px-2 py-2 text-xl rounded text-white">
                   <BiLogoFacebook />
                 </button>
                 <button className="bg-red-500 px-2 py-2 text-xl rounded text-white">
@@ -214,13 +217,13 @@ const Register = () => {
               <div className="flex gap-1 mx-5 mt-3 justify-center items-center">
                 <p className="text-center text-sm text-slate-600">{`already have an account?`}</p>
                 <Link to={"/login"}>
-                  <p className="text-[#0c768a] text-sm font-semibold">Login</p>
+                  <p className="text-black text-sm font-semibold">Login</p>
                 </Link>
               </div>
             </form>
           </div>
         </div>
-        <p className="text-center text-sm font-semibold text-slate-400 md:text-slate-600">
+        <p className="text-center text-[10px] font-semibold text-slate-400 md:text-slate-600">
           &copy; 2023 Team-L. All rights reserved.
         </p>
       </div>

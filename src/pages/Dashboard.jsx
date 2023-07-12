@@ -1,5 +1,6 @@
 import Charts from "../components/Charts";
 import Copy from "../components/Copy";
+import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Status from "../components/Status";
 import Table from "../components/Table";
@@ -13,6 +14,7 @@ const Dashboard = () => {
           <Charts />
           <Copy />
           <Table />
+          <Footer/>
         </div>
       </div>
     </Layout>
