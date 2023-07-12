@@ -45,8 +45,18 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
       team : "Team Reporting"
     }
   ]
+  const imageVatiants = {
+    hidden:{x:'-100vw'},
+    visible:{
+      x:0,
+      transition:{duration:1}
+    }
+   }
   return (
     <motion.div
+    variants={imageVatiants}
+    initial='hidden'
+    animate='visible'
     className=' text-black'>
       {/* Sidebar */}
       <div className="">
