@@ -1,60 +1,61 @@
 /* eslint-disable no-unused-vars */
 // import React from 'react'
-import {RiMenu2Line} from 'react-icons/ri'
-import { motion } from 'framer-motion'
-import {BsChevronDown } from 'react-icons/bs'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import './ScrollBarStyles.css';
+import { RiMenu2Line } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { BsChevronDown } from "react-icons/bs";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./ScrollBarStyles.css";
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
-const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
-  const [user,setUser]  = useState({
-    id : 4,
-    name : 'Reporting',
-    firstName : 'E',
-    team : "Team Reporting"
+const Sidebar = ({ isSidebarOpen, setSidebarOpen }) => {
+  const [user, setUser] = useState({
+    id: 4,
+    name: "Reporting",
+    firstName: "E",
+    team: "Team Reporting",
   });
   const userData = [
     {
-      id : 1,
-      name : 'CRM',
-      firstName : 'C',
-      team : "Designer Team"
+      id: 1,
+      name: "CRM",
+      firstName: "C",
+      team: "Designer Team",
     },
     {
-      id : 2,
-      name : 'Application Design',
-      firstName : 'A',
-      team : "Flutter Devs"
+      id: 2,
+      name: "Application Design",
+      firstName: "A",
+      team: "Flutter Devs",
     },
     {
-      id : 3,
-      name : 'Ecomerce',
-      firstName : 'E',
-      team : "Developer Team"
+      id: 3,
+      name: "Ecomerce",
+      firstName: "E",
+      team: "Developer Team",
     },
     {
-      id : 4,
-      name : 'Reporting',
-      firstName : 'E',
-      team : "Team Reporting"
-    }
-  ]
+      id: 4,
+      name: "Reporting",
+      firstName: "E",
+      team: "Team Reporting",
+    },
+  ];
   const imageVatiants = {
-    hidden:{x:'-100vw'},
-    visible:{
-      x:0,
-      transition:{duration:1}
-    }
-   }
+    hidden: { x: "-100vw" },
+    visible: {
+      x: 0,
+      transition: { duration: 1 },
+    },
+  };
   return (
     <motion.div
-    variants={imageVatiants}
-    initial='hidden'
-    animate='visible'
-    className=' text-black'>
-    <motion.div className=" text-black">
+      variants={imageVatiants}
+      initial="hidden"
+      animate="visible"
+      className=" text-black"
+    >
+      {/* <motion.div className=" text-black"> */}
       {/* Sidebar */}
       <div className="">
         {/* Sidebar Brand */}
@@ -77,45 +78,6 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
             <RiMenu2Line />
           </button>
         </div>
-        {/* User Dropdown */}
-        {/* <div className=" hidden md:block">
-        <button className="dropdown px-5 py-1 mt-2 w-full ">
-          <div className=" bg-[#F7F5EF] rounded-md">
-            <div className=" flex justify-between items-center  text-black p-3">
-              <div className=" flex">
-                <div className="border rounded-full bg-[#F7F5EF] h-10 flex items-center mt-2">
-                    <div className=' p-4 text-xl font-bold text-[#0C768A]'>{user?.firstName}</div>
-                </div>
-                <div className=" ml-2 text-left justify-center">
-                  <div className=' font-bold text-md'>{user?.name}</div>
-                  <div className=' text-[#C1DCE1]'>{user?.team}</div>
-                </div>
-              </div>
-              <div className="">
-                <BsChevronDown />
-              </div>
-            </div>
-          </div>
-          <ul className=" dropdown-content z-[1] rounded bg-white w-[260px] menu">
-          {userData?.map(user => (       
-            <li onClick={() => setUser(user)} key={user?.id}>
-              <div className="flex justify-between items-center text-white">
-                <div className="flex">
-                  <div className="border rounded-full bg-[#0C768A] h-10 flex items-center">
-                    <div className="p-3 text-xl font-bold text-[#F2F6F7]">{user?.firstName}</div>
-                  </div>
-                  <div className="ml-2 text-left justify-center">
-                    <div className="font-bold text-lg text-[#0C768A]">{user?.name}</div>
-                    <div className="text-[#A8A8AF]">{user?.team}</div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          ))}
-          <h1 className=' text-lg mb-2 text-[#0C768A]'>View More ...</h1>
-          </ul>
-        </button>
-       </div> */}
         {/* Menu Section */}
         <div className="">
           <div className=" ml-6 my-5">
@@ -220,29 +182,6 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
                 </ul>
               </div>
             </div>
-            {/* layout
-          <div className="collapse">
-            <input type="checkbox" /> 
-            <div className="collapse-title ">
-                <div className=" flex justify-between items-center px-3 w-[300px]">
-                <a href="/" className=' flex items-center'>
-                <span className=' text-xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><polygon points="22 11 10 11 10 2 8 2 8 11 8 11 8 13 8 13 8 22 10 22 10 13 22 13 22 11"></polygon><path fill='white' d="M3,2H8A0,0,0,0,1,8,2V22a0,0,0,0,1,0,0H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2Z"></path><path fill='#86BBC5' d="M10 2H21a1 1 0 0 1 1 1v8a0 0 0 0 1 0 0H10a0 0 0 0 1 0 0V2A0 0 0 0 1 10 2zM10 13H22a0 0 0 0 1 0 0v8a1 1 0 0 1-1 1H10a0 0 0 0 1 0 0V13A0 0 0 0 1 10 13z"></path></svg></span>
-                <h1 className=' text-stone-200 text-[18px]'>Layouts</h1>
-                </a>
-            <span className=' mt-3 text-white mr-7'> <BsChevronDown /> </span>
-              </div>
-            </div>
-            <div className="collapse-content"> 
-              <ul className='text-[18px] text-stone-200 ml-10'>
-               <li className=''>
-                  <h1 className=' mb-2'>Vartical</h1>
-                </li>
-                <li className=''>
-                    <h1>Horinzontal</h1>
-                </li>
-              </ul>
-            </div>
-          </div> */}
           </div>
         </div>
 
@@ -302,49 +241,6 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
               </ul>
             </div>
           </div>
-          {/* ExtraPages */}
-          {/* <div className="collapse">
-            <input type="checkbox" /> 
-            <div className="collapse-title ">
-                <div className=" flex justify-between items-center px-3 w-[300px]">
-                <a href="/" className=' flex items-center'>
-                <span className=' text-xl mr-2' ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path fill='white' d="M21,12c0-.34-.02-.67-.05-1H12.5V9.5a.99991.99991,0,0,0-1.707-.707l-2.5,2.5a.99962.99962,0,0,0,0,1.41406l2.5,2.5A.99991.99991,0,0,0,12.5,14.5V13h8.45C20.98,12.67,21,12.34,21,12Z"></path><path fill='#86BBC5' d="M12.5,13v1.5a.99989.99989,0,0,1-1.707.707l-2.5-2.5a.99962.99962,0,0,1,0-1.41406l2.5-2.5A.99991.99991,0,0,1,12.5,9.5V11h8.44952a10,10,0,1,0,0,2Z"></path></svg></span>
-                <h1 className=' text-stone-200 text-[18px]'>Extra Pages</h1>
-                </a>
-            <span className=' mt-3 text-white mr-7'> <BsChevronDown /> </span>
-              </div>
-            </div>
-            <div className="collapse-content"> 
-              <ul className='text-[18px] text-stone-200 ml-10 flex flex-col gap-5'>
-                <li className=''>
-                  <h1 className=''>Stater Page</h1>
-                </li>
-                <li className=''>
-                    <h1>Coming Soon</h1>
-                </li>
-                <li className=''>
-                  <h1 className=''>Maintainance</h1>
-                </li>
-                <li className=''>
-                    <h1>Error 404</h1>
-                </li>
-                <li className=''>
-                  <h1 className=''>[Help Center] FAQ</h1>
-                </li>
-                <Link to={'/profile'}>
-                <li className=''>
-                    <h1>Profile</h1>
-                </li>
-                </Link>
-                <li className=''>
-                  <h1 className=''>Pricing</h1>
-                </li>
-                <li className=''>
-                    <h1>Terms and Conditions</h1>
-                </li>
-              </ul>
-            </div>
-          </div> */}
         </div>
 
         {/* Components */}
@@ -353,7 +249,7 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
             <h1 className=" text-stone-500 font-bold">COMPONENTS</h1>
           </div>
           <div className=" flex justify-between items-center px-7 mt-3">
-            <a href="/" className=" flex items-center mt-2">
+            <Link to={"/form"} className=" flex items-center mt-2">
               <span className=" text-2xl mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -378,8 +274,8 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
                   ></path>
                 </svg>
               </span>
-              <h1 className=" text-black text-[18px]">Forms</h1>
-            </a>
+              <h1 className=" text-black text-[18px]">Create Form Data</h1>
+            </Link>
           </div>
           <div className=" flex justify-between items-center px-7 mt-5">
             <a href="/" className=" flex items-center mt-2">
@@ -428,7 +324,6 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
               <h1 className=" text-black text-[18px]">Charts</h1>
             </a>
           </div>
-
           <div className=" flex justify-between items-center px-7 mt-5">
             <a href="/" className=" flex items-center mt-2">
               <span className=" text-2xl mr-2">
@@ -451,66 +346,8 @@ const Sidebar = ({isSidebarOpen,setSidebarOpen}) => {
             </a>
           </div>
         </div>
-
-        {/* Steven Deese */}
-        {/* <div className=" fixed bottom-0 ">
-      <button className="dropdown dropdown-top dropdown-end w-[250px] md:w-[290px] h-20 bg-[#0C768A]">
-        <div  className=" ml-5 mt-5 mb-2">
-            <div className=" flex items-center justify-between">
-              <img width={'50px'} height={'42px'} className=' rounded-full border-white border-4 pointer-events-none' src="https://themesdesign.in/tocly/layouts/assets/images/users/avatar-2.jpg" alt="" />
-              <h1 className=' text-white text-xl mr-10'>Steven Deese</h1>
-              <BiDotsVerticalRounded className=' text-xl text-white' />
-            </div>
-        </div>
-        <ul  className="dropdown-content z-[1] menu p-3 shadow bg-base-100 rounded-md w-[250px]">
-          <Link to={'/profile'}>
-          <li>
-            <div className=" text-lg text-stone-500">
-              <MdAccountCircle className=' text-xl' />
-              <h1>Profile</h1>
-            </div>
-          </li>
-          </Link>
-          <li>
-            <div className=" text-lg text-stone-500">
-              <BiMessageDetail className=' text-xl' />
-              <h1>Messages</h1>
-            </div>
-          </li>
-          <li>
-            <div className=" text-lg text-stone-500 mb-4">
-              <FiLifeBuoy className=' text-xl' />
-              <h1>Helps</h1>
-            </div>
-          </li>
-          <li>
-            <div className=" text-lg text-stone-500">
-              <RiWallet3Fill className=' text-xl' />
-              <h1>Balance :</h1>
-              <span className=' mr-3 text-black text-[17px] font-bold'>$5971.67</span>
-            </div>
-          </li>
-          <li>
-            <div className=" text-lg text-stone-500">
-              <FiSettings className=' text-xl' />
-              <h1>Setting :</h1>
-              <span className='bg-stone-500 text-sm rounded-lg px-2 text-white'>New</span>
-            </div>
-          </li>
-          <li>
-            <div className=" text-lg text-stone-500">
-              <AiFillLock className=' text-xl' />
-              <h1>Lock Screen</h1>
-            </div>
-          </li>
-        </ul>
-      </button>
-      </div> */}
       </div>
     </motion.div>
   );
-
-
-
-export default Sidebar
-
+};
+export default Sidebar;
